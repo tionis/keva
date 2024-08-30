@@ -1,0 +1,33 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "jsr:@hono/hono@^4.5.9": "jsr:@hono/hono@4.5.9",
+      "npm:create-hono": "npm:create-hono@0.12.0"
+    },
+    "jsr": {
+      "@hono/hono@4.5.9": {
+        "integrity": "47f561e67aedbd6d1e21e3a1ae26c1b80ffdb62a51c161d502e75bee17ca40af"
+      }
+    },
+    "npm": {
+      "create-hono@0.12.0": {
+        "integrity": "sha512-/H+quXE5ygrA52EqsifTCvk3DVdEBg2bX/3OJDQrjBjopqTzNt9kCqq8LR41FFXl96NMBc7P5NqLJBi/M3hzTw==",
+        "dependencies": {}
+      }
+    }
+  },
+  "remote": {
+    "https://deno.land/x/json_patch@v0.1.1/deps.ts": "068cdafffd5b819bf3819db5a4221ada83c1c2524990b4c5aca5403480910b19",
+    "https://deno.land/x/json_patch@v0.1.1/mod.ts": "cc2765b3491995635e08f2be3e8f4703086864d9d9fc4e43fa2d42fc1c5d7487",
+    "https://deno.land/x/json_patch@v0.1.1/src/json_patch.ts": "e49da1eae964d59bba03c3f909cc29907f4804b14a4c34b0722c574b37d5f3b8",
+    "https://deno.land/x/json_patch@v0.1.1/src/json_pointer.ts": "63032a9755ae586297552717fa22290214d537bf4d9c5ad96ac23ec964e791a2",
+    "https://deno.land/x/json_patch@v0.1.1/src/utils.ts": "d0e343f24d4ea26ec8e3aa71421a270fd260459fa23948a9ca769f00d0d11c34",
+    "https://deno.land/x/object_clone@1.1.0/mod.ts": "1cc646ff28985d8ce6580ca04595b01160cb198c15e15e0bba85112c310d2cf6"
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@hono/hono@^4.5.9"
+    ]
+  }
+}

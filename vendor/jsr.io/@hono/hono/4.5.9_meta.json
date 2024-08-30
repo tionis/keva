@@ -1,0 +1,8139 @@
+{
+  "manifest": {
+    "/src/helper/ssg/utils.ts": {
+      "size": 2071,
+      "checksum": "sha256-f30e9c69fa568d6c9ea27273f6080117d73610be09e21129cd2e6b10dd1f70f8"
+    },
+    "/src/adapter/service-worker/types.ts": {
+      "size": 496,
+      "checksum": "sha256-6f457c47bff7d5391b35bae93796b5ea269b7b966f8107fd38da35e017d80bc7"
+    },
+    "/src/jsx/dom/index.ts": {
+      "size": 3197,
+      "checksum": "sha256-0f42e46539beee3cf5509dcad268d02e5e75fc43bc461c3fde78903bb2f1f853"
+    },
+    "/src/router/trie-router/index.ts": {
+      "size": 85,
+      "checksum": "sha256-357e59644e2e3e8cb71efb01ab68709f6d5059f9b8d440d073053e924d6db30c"
+    },
+    "/src/adapter/bun/server.ts": {
+      "size": 576,
+      "checksum": "sha256-564997a3c487084c43d8169735245b8de152777c142f490a879d3ef2939b4917"
+    },
+    "/src/adapter/vercel/index.ts": {
+      "size": 130,
+      "checksum": "sha256-ef06a197bbb23957bed11e93b0c37cbc4439991667a904f6c249fc0cfacf6c4c"
+    },
+    "/src/router/linear-router/router.ts": {
+      "size": 4619,
+      "checksum": "sha256-a9ee28a1ad5846a2a73b089e0f22b20d42d4d9578d8335edde524b8e7158a6b1"
+    },
+    "/src/adapter/vercel/conninfo.ts": {
+      "size": 308,
+      "checksum": "sha256-f0aa35eeed2dc6b55e7ccea20e35e50d5bd3108067c39b04be58d69f15406342"
+    },
+    "/src/middleware/secure-headers/index.ts": {
+      "size": 335,
+      "checksum": "sha256-5447d9cd56a519fd90669e03d2d99f9c2e87e01c8a598c32e24a944272f39349"
+    },
+    "/src/helper/accepts/accepts.ts": {
+      "size": 2307,
+      "checksum": "sha256-46531c4ee658e9acad69ceb5cfe3645876a095228c7af8d6567073ed57c1e3e1"
+    },
+    "/src/middleware/etag/index.ts": {
+      "size": 2425,
+      "checksum": "sha256-82380f572c3d0a07f3869798ab776c111db5c17c90f56e77d6f4e29e53ac7dea"
+    },
+    "/src/adapter/deno/deno.d.ts": {
+      "size": 863,
+      "checksum": "sha256-6e90a119ae70aa0766cb0d8039cbad878b75689f06941f3446027506d7227395"
+    },
+    "/src/utils/jwt/utf8.ts": {
+      "size": 177,
+      "checksum": "sha256-661ca51674ed0a853ac2e675a5e7e264d65b1b80e961993bc80348dba6f8974d"
+    },
+    "/src/router/linear-router/index.ts": {
+      "size": 89,
+      "checksum": "sha256-ecd4ce782b42182dd50d2c4a76ec9f6fb0f6a49221a0c74aec80396dadffda8c"
+    },
+    "/src/jsx/hooks/index.ts": {
+      "size": 12368,
+      "checksum": "sha256-49fb3e6af7c614a4ee132236f523b3b1f061e404851e4a33e952946dc533d66d"
+    },
+    "/src/middleware/secure-headers/secure-headers.ts": {
+      "size": 10272,
+      "checksum": "sha256-688d085d8c4eb49bccdd60d0482d4f6ce011e823e2dd18e3e339d9afe0f1299e"
+    },
+    "/src/adapter/netlify/index.ts": {
+      "size": 74,
+      "checksum": "sha256-d6d9405164f1ff246285c7ffabacdee4b8a0ed21bb7fa8d7f344044b9f1e217a"
+    },
+    "/src/types.ts": {
+      "size": 59391,
+      "checksum": "sha256-b9ad92b822c52f059e943a7fda48e14fc58f3ea9aa1e1a5112b7b8eda59bd54f"
+    },
+    "/src/middleware/timing/timing.ts": {
+      "size": 6063,
+      "checksum": "sha256-7a074c804abba25a306de0396f83ad5f161ae377036f7f88dcaa005e08e98bed"
+    },
+    "/src/helper/factory/index.ts": {
+      "size": 6747,
+      "checksum": "sha256-94ab3e7dd2ee6f1aa426adeb9aa4ea8a0f8ed1252cf3489db3f179da9e1fb5d5"
+    },
+    "/src/middleware/csrf/index.ts": {
+      "size": 2592,
+      "checksum": "sha256-a64baf928887b643443cfac4b0e0dda5d392e14c3035fabf8f7620074b2a2ffa"
+    },
+    "/src/router/pattern-router/index.ts": {
+      "size": 91,
+      "checksum": "sha256-0edbd730f2556c5d6cb6978f06f3f7220999e0b1656e09d9e54c52d7f6b0570d"
+    },
+    "/src/utils/http-status.ts": {
+      "size": 1316,
+      "checksum": "sha256-22c092f8c0c4cd2a2cfb9fb03e325e90ee1409d1cc6ff4b37537fcdc5b832e95"
+    },
+    "/src/context.ts": {
+      "size": 24835,
+      "checksum": "sha256-175c1326cbdaa8b96478a8be4d30a9f7871a4e05dd826854e1cb883a7890b336"
+    },
+    "/src/adapter/aws-lambda/handler.ts": {
+      "size": 14736,
+      "checksum": "sha256-9b60348ba71610ab81409be1641f546ddddb90a9099d3d98abfe9795be625657"
+    },
+    "/src/adapter/cloudflare-workers/websocket.ts": {
+      "size": 1648,
+      "checksum": "sha256-ffbbf30af25b3dae9afdfd864999d9597288fe7bb701b3a8096598520ffbac65"
+    },
+    "/src/hono.ts": {
+      "size": 1097,
+      "checksum": "sha256-b05bb169150a366d3d8a704d1c6218e44008ed18125cf65ebefbaa5ca371fba6"
+    },
+    "/src/utils/filepath.ts": {
+      "size": 1301,
+      "checksum": "sha256-15f73e551269c1667ae6c5798a6456e6f9fd95d2f855d35705bd33c64b608bda"
+    },
+    "/src/adapter/lambda-edge/index.ts": {
+      "size": 269,
+      "checksum": "sha256-9f8719506a63993e3390d8edc1ba1040c613f471e470c27b4ad542103964b637"
+    },
+    "/src/middleware/bearer-auth/index.ts": {
+      "size": 4459,
+      "checksum": "sha256-fb18abd05456d65229258aeeb31460591d670ee995c22b58e10c323f9e244b7f"
+    },
+    "/src/middleware/request-id/index.ts": {
+      "size": 263,
+      "checksum": "sha256-a9cd8214474d06cfc9803c55c39572f41af87539ccdf7babc1d08136d3ebfc89"
+    },
+    "/src/jsx/utils.ts": {
+      "size": 1118,
+      "checksum": "sha256-0c346bc120a395bbbd47424ef01aa29acb7a58fd3067b3a1ada0592c5898e7fa"
+    },
+    "/src/helper/css/index.ts": {
+      "size": 6356,
+      "checksum": "sha256-108ba362481dcae7033819c2e668adfd6a9a5eb09ee688cd53874957a5866e60"
+    },
+    "/src/router/trie-router/router.ts": {
+      "size": 667,
+      "checksum": "sha256-54ced78d35676302c8fcdda4204f7bdf5a7cc907fbf9967c75674b1e394f830d"
+    },
+    "/src/validator/validator.ts": {
+      "size": 4689,
+      "checksum": "sha256-b9a4abbe0a46384808f4aa02977b207f7f28120ea5dae2213021a930171f437d"
+    },
+    "/src/adapter/netlify/handler.ts": {
+      "size": 304,
+      "checksum": "sha256-4588f074b14e6c0dabafe8d9076cd976e6893981db141788e2fffcca6bfc0821"
+    },
+    "/src/adapter/bun/serve-static.ts": {
+      "size": 1048,
+      "checksum": "sha256-e81e3e3b7eec021880dc2f1e655d0eaa4e2e6465f0a9399e0a1ca6731e10a6f0"
+    },
+    "/src/helper/html/index.ts": {
+      "size": 1896,
+      "checksum": "sha256-f378ec9227e9628d02d10806906d146464cfc45be3e3ae1125b2b5933ebfab4a"
+    },
+    "/src/middleware/cors/index.ts": {
+      "size": 4397,
+      "checksum": "sha256-2c0df352503eeef72f79887054d056a110ec160836b8eefbcafba9327ee8693d"
+    },
+    "/src/adapter/netlify/mod.ts": {
+      "size": 38,
+      "checksum": "sha256-310603d57184afa19f59137371350f40fb3cb9d979dccaf9590d4d115730135f"
+    },
+    "/src/adapter/cloudflare-pages/index.ts": {
+      "size": 176,
+      "checksum": "sha256-1a2b44d510f36dcf93e744e95a6d4857dd1fdf7aa4857fb9afaa928cce78b514"
+    },
+    "/src/utils/cookie.ts": {
+      "size": 7350,
+      "checksum": "sha256-2976a90690e5982291649e7899696e922f16040fa4dd37a693885f0c6796b89f"
+    },
+    "/src/jsx/streaming.ts": {
+      "size": 5808,
+      "checksum": "sha256-2c9876245435201ff7a57462894631768849b8f5621863674bd9eb3d121e47ce"
+    },
+    "/src/helper/ssg/middleware.ts": {
+      "size": 1954,
+      "checksum": "sha256-f42dd0b5fe7a71232086ceb7033d1b527e517c1fb1741fd0d2deab77d9467443"
+    },
+    "/src/index.ts": {
+      "size": 1078,
+      "checksum": "sha256-1266b9fcff006332b400682065140f02b3210f2cc6ec59d458d4a2e0ee22f155"
+    },
+    "/src/utils/url.ts": {
+      "size": 8234,
+      "checksum": "sha256-8c0d67631d7ba7f6efd20770634fffdc9760613a185422d2b7c01c60dcfa341d"
+    },
+    "/src/preset/quick.ts": {
+      "size": 730,
+      "checksum": "sha256-121e7bb2405965e4d59da0545e8c25f7a0fb8543833bb2a16960a6d445607bc3"
+    },
+    "/src/helper/adapter/index.ts": {
+      "size": 2303,
+      "checksum": "sha256-569b87c98d0152398dc2aab8e20eece27369eaa015c17c4e8e15574e8221c485"
+    },
+    "/src/router/reg-exp-router/index.ts": {
+      "size": 89,
+      "checksum": "sha256-45d04816568f9d6e68e6e19c8baf5ae96d8072959c4ebb4392c5b636dd5e078f"
+    },
+    "/docs/CODE_OF_CONDUCT.md": {
+      "size": 5221,
+      "checksum": "sha256-5a12a8d67b9cea68e574bd10376606e1def79daf9532ca916cfb5abe787925db"
+    },
+    "/src/utils/jwt/jws.ts": {
+      "size": 7194,
+      "checksum": "sha256-0d5c214c97aec5695b545f8ea87e02861d2a26b650675b2d7c185dc7ccd5a1f0"
+    },
+    "/src/utils/body.ts": {
+      "size": 6534,
+      "checksum": "sha256-1cdae87451eabf16df72c555b5d4a8cada9fa64aee6824b008917a7cb10ad80c"
+    },
+    "/src/utils/crypto.ts": {
+      "size": 1762,
+      "checksum": "sha256-015dae3d67dcdd9b322c84313156c9a370e1941cde479c681fc58ec82687d3ee"
+    },
+    "/src/utils/jwt/types.ts": {
+      "size": 1940,
+      "checksum": "sha256-7d393a765b00261706676d240ed4b9c24ed029282b3b6870e7f7451004a34870"
+    },
+    "/src/client/types.ts": {
+      "size": 5173,
+      "checksum": "sha256-1d36596c4b0ba1344579ddb252a694c4cddf77cd584fecffe8d69f680a501cde"
+    },
+    "/src/jsx/types.ts": {
+      "size": 1466,
+      "checksum": "sha256-f1d8c7f722111d8ed8aaafd54876f171d5b5444b499274166d1cb6f7e45cac6d"
+    },
+    "/src/jsx/dom/hooks/index.ts": {
+      "size": 2435,
+      "checksum": "sha256-af1182e5bcd5dcd2e7a6b1c64818b39ac4fd98c62d3a0890bec851a417611525"
+    },
+    "/src/utils/mime.ts": {
+      "size": 3021,
+      "checksum": "sha256-91edf4818515b0700b03ef8d36b36448a09bdf22d5b1fe8bdb0812f468eefb8b"
+    },
+    "/src/jsx/dom/components.ts": {
+      "size": 1132,
+      "checksum": "sha256-9c449221fea07f5f5f93436706c06e4029fb6d9025d0e838e9b23f9f17dec71a"
+    },
+    "/src/jsx/intrinsic-element/common.ts": {
+      "size": 297,
+      "checksum": "sha256-44fe007aca17ea0e78e1e865a1396e430a1db3c07cd492a4bcd3e3d2bb01c747"
+    },
+    "/src/jsx/dom/render.ts": {
+      "size": 24829,
+      "checksum": "sha256-4511066c7938f64c8afe07eaac4c181c806f08c227a1aca96c538f6edc5e220f"
+    },
+    "/src/helper/conninfo/types.ts": {
+      "size": 687,
+      "checksum": "sha256-100c203fe0d9650e8b4d5f55fcd03ee75747e316443033d5fd660081a255732f"
+    },
+    "/src/adapter/bun/index.ts": {
+      "size": 243,
+      "checksum": "sha256-3a3fc3e8c40c6a003a190cb2366a71b3d9576550ec632834c1de7c603b01d132"
+    },
+    "/src/middleware/combine/index.ts": {
+      "size": 5060,
+      "checksum": "sha256-06a23ebe4227854df30d9b08e785c71a61d7bbfe807fff70c482bf5873103f0f"
+    },
+    "/src/middleware/request-id/request-id.ts": {
+      "size": 1629,
+      "checksum": "sha256-389242c5d9fbbd1f17c576d118984280aa6d21612ff25e3f5435d39d22f19cbe"
+    },
+    "/src/jsx/context.ts": {
+      "size": 1555,
+      "checksum": "sha256-14d8b795d5d822a8a02e01870bd7ab57fb7b343cbfeebf71457dddee433e3e17"
+    },
+    "/src/router/reg-exp-router/trie.ts": {
+      "size": 2044,
+      "checksum": "sha256-3a01bb0c27d7a71ff0c5cd6e4991da2d5a4c8c07d082a9922329f6fb2bdb4ce0"
+    },
+    "/src/middleware/cache/index.ts": {
+      "size": 4181,
+      "checksum": "sha256-dbac31f46269daac76cd67d8f6a5adf22196044dd990770f7e88bb5324c71b28"
+    },
+    "/src/adapter/vercel/handler.ts": {
+      "size": 347,
+      "checksum": "sha256-afe010e0d926a9b99b2bef897fed84cef2f73d6ee241c8764f18816e8cacbe1a"
+    },
+    "/src/utils/types.ts": {
+      "size": 3387,
+      "checksum": "sha256-82a9d3a9646d4f107cc0bea34c06c9ac436f0952b78d30141975731872b4e871"
+    },
+    "/src/router/reg-exp-router/node.ts": {
+      "size": 3981,
+      "checksum": "sha256-7efaa6f4301efc2aad0519c84973061be8555da02e5868409293a1fd98536aaf"
+    },
+    "/src/adapter/cloudflare-workers/serve-static-module.ts": {
+      "size": 377,
+      "checksum": "sha256-62b9e667159703ff33ebf2bd9d851a0c4aebcdbff11b58469ea57b17ee22ea9d"
+    },
+    "/src/adapter/cloudflare-workers/serve-static.ts": {
+      "size": 1391,
+      "checksum": "sha256-4f514b79b738dc5319fc9dfa20338555a6cb9e3bcb763277326b6a57506494b5"
+    },
+    "/src/hono-base.ts": {
+      "size": 15486,
+      "checksum": "sha256-ad387aabeb079481b772cd52947e52e8fa335803b6e9eaa9e9911efa894e3749"
+    },
+    "/src/middleware/serve-static/index.ts": {
+      "size": 3053,
+      "checksum": "sha256-e7acb689d111a7ed93b777695452a63b372daa4ef4ecf73ccae9a765e3dbd3e8"
+    },
+    "/src/middleware/ip-restriction/index.ts": {
+      "size": 4820,
+      "checksum": "sha256-c15d31e785100384ad6d8dca94dc8fd1153527e68fdb1bdeb1304a7e7e4a83b4"
+    },
+    "/docs/CONTRIBUTING.md": {
+      "size": 2100,
+      "checksum": "sha256-d0e16b6cc21d9b94a729c8e19ca7c6da7b337687086b038c7dedd1216d395a3c"
+    },
+    "/src/utils/concurrent.ts": {
+      "size": 1073,
+      "checksum": "sha256-64ffff2eae843974a1673e881e9895241cf02259bb38cb0793d308423307e1ba"
+    },
+    "/src/jsx/dom/jsx-runtime.ts": {
+      "size": 189,
+      "checksum": "sha256-99ef95e4342116261b03dadf95177f00e8c4f48fa223b4f341b23ddcbf3621a9"
+    },
+    "/src/jsx/dom/utils.ts": {
+      "size": 235,
+      "checksum": "sha256-5d3e8c14996902db9c1223041fb21480fa0e921a4ccdc59f8c7571c08b7810f2"
+    },
+    "/src/adapter/cloudflare-workers/utils.ts": {
+      "size": 1320,
+      "checksum": "sha256-ed7fa0c3cf911aebef0b2259710af3d7dfc53e29f638bf88e2743a0914041ad5"
+    },
+    "/src/helper/dev/index.ts": {
+      "size": 2245,
+      "checksum": "sha256-adacae5c5ecd4b0688b847087e3fd8b971989b4ee5d267fbf7ce014cea2f57da"
+    },
+    "/src/router/pattern-router/router.ts": {
+      "size": 1620,
+      "checksum": "sha256-cc7558ccc9f1ba9dea9f83db36e0157c599dae8bfb08ac35905d0585208acead"
+    },
+    "/src/helper/conninfo/index.ts": {
+      "size": 131,
+      "checksum": "sha256-38c21bdb458b3675f1c7931df87e12de74bc6566a7d52f6914a6b49bef7dd3f2"
+    },
+    "/docs/MIGRATION.md": {
+      "size": 7973,
+      "checksum": "sha256-5845766f7f429e044e9231d0346389b2ee3cb241ed45f7de4a695c14382914bf"
+    },
+    "/src/helper/streaming/index.ts": {
+      "size": 223,
+      "checksum": "sha256-b1ea028c80add3d0540fd2decb2e5feb5b47658ad861dc3c34364864965fc14d"
+    },
+    "/src/helper/streaming/sse.ts": {
+      "size": 2264,
+      "checksum": "sha256-3f347e2b62f3ad9443e53dd6bb9a0e73636632b2455ae05e6fd1b1916c16bfdb"
+    },
+    "/src/client/utils.ts": {
+      "size": 1537,
+      "checksum": "sha256-97e7df2cd2a6d9a0498f17e1a3c7ee89771ac98869d61bd3b15e1bd98d0f42f8"
+    },
+    "/src/adapter/bun/conninfo.ts": {
+      "size": 760,
+      "checksum": "sha256-d5f8583b2ec90ed243179b5dc2839c7cd5c6180c436e716a8014a7b3466b98db"
+    },
+    "/src/jsx/intrinsic-element/components.ts": {
+      "size": 5959,
+      "checksum": "sha256-013daf90f96b3ee8f1341b46d573ea123978792039be2488d045bfcbc6225d3e"
+    },
+    "/src/utils/handler.ts": {
+      "size": 484,
+      "checksum": "sha256-ebcb4d760ddb4bee850572d9f7568ce93f70b0d1ddeddd7d534534b1dcd5c73f"
+    },
+    "/src/adapter/lambda-edge/conninfo.ts": {
+      "size": 377,
+      "checksum": "sha256-ae38090117d316a51b2af6ccb71379886982515a2a11607756b3d50d651053b5"
+    },
+    "/src/jsx/dom/client.ts": {
+      "size": 2291,
+      "checksum": "sha256-d221809c407014855467af3a59b53ffa9e5fdf04f78e2433c2cc9cb509e7a4d4"
+    },
+    "/src/middleware/logger/index.ts": {
+      "size": 2496,
+      "checksum": "sha256-07084b15a1b6da2367b3c1f89c5089541b1977ddebda956f9f23fc2022ef64f3"
+    },
+    "/src/client/client.ts": {
+      "size": 6075,
+      "checksum": "sha256-559f5982379791a824e871ac2b5e407615a6a4273d84aa32ea823b3d12bcae3f"
+    },
+    "/src/middleware/jwt/jwt.ts": {
+      "size": 4697,
+      "checksum": "sha256-ab096afaabe1ca8d8772909428c4e1fd60e6a200ae2e2bcf14655a75dd58a047"
+    },
+    "/src/router/reg-exp-router/router.ts": {
+      "size": 8243,
+      "checksum": "sha256-2eb452514e5a14c64ce9789dc986fe88808b767cfcc8043a8388fd3d7a82424b"
+    },
+    "/src/jsx/intrinsic-elements.ts": {
+      "size": 29429,
+      "checksum": "sha256-5978a79375c7d0b156d902c1711c36617b1c8ea5a7594d39427556e935eb4fb0"
+    },
+    "/src/helper/streaming/text.ts": {
+      "size": 521,
+      "checksum": "sha256-bd8d1973feeabca63016cf638309aaeb829a914bf139a26120ca5c85e2b4ce96"
+    },
+    "/src/jsx/base.ts": {
+      "size": 11710,
+      "checksum": "sha256-b77a8598e91d21075d7efacca542412893639c431f246f20a20c80d4195a3f7e"
+    },
+    "/src/middleware/method-override/index.ts": {
+      "size": 4605,
+      "checksum": "sha256-ae12d660d8b085f93cf7a6015ccb0ae13a683fbfb127bb8d1930f0784856c538"
+    },
+    "/src/jsx/index.ts": {
+      "size": 2075,
+      "checksum": "sha256-28cae9e3c24357c792705ea43aa6454290250eb71a7b7cd2eeb2cb685217f552"
+    },
+    "/src/middleware/trailing-slash/index.ts": {
+      "size": 1722,
+      "checksum": "sha256-1584139c66600b0a45225397879530b5b6fb97327bcfa903d2d3b8ea7709388a"
+    },
+    "/src/helper/streaming/stream.ts": {
+      "size": 1113,
+      "checksum": "sha256-763d1ce9d5aea61b515ba8454bf30c4b2e5b93eeb0bce96625669bb3b53aa88a"
+    },
+    "/src/adapter/aws-lambda/types.ts": {
+      "size": 2996,
+      "checksum": "sha256-5304ca36d3091d879d78606994de8ebf5a483857a059e38900b40deede2e4ae1"
+    },
+    "/src/adapter/service-worker/handler.ts": {
+      "size": 732,
+      "checksum": "sha256-c8edf543157afcc545b6b5d5989b2f8b2f94dae8db3a55edc737970983e4115d"
+    },
+    "/src/adapter/cloudflare-workers/conninfo.ts": {
+      "size": 184,
+      "checksum": "sha256-f2a9308340b5a486e8a0228d9f9cb343a09b0e0018faef63f07749af4153b6ee"
+    },
+    "/src/jsx/constants.ts": {
+      "size": 241,
+      "checksum": "sha256-107d3176b34fcf0aaea69d2499fb102f700ef66cc320e2aaa8846aa2d94f0d04"
+    },
+    "/src/adapter/deno/index.ts": {
+      "size": 243,
+      "checksum": "sha256-e0f5a615acbc82306c7f8658980f137150bae649e6ec55528240bb68981786f1"
+    },
+    "/src/client/index.ts": {
+      "size": 225,
+      "checksum": "sha256-15f6508b06ea49b94a11f1f72ccf60ce2206c56789e7cc019bc06f584bf350d1"
+    },
+    "/src/jsx/dom/server.ts": {
+      "size": 1995,
+      "checksum": "sha256-2639b2a870390d3b966a9e40003fa91b7deaeb608151c9e60dcea8c1d8baca8e"
+    },
+    "/src/http-exception.ts": {
+      "size": 2280,
+      "checksum": "sha256-ceb5f3343b49ad86ba83c88033e6abe07049219ae52ac0aa7677ba9fc3d074b9"
+    },
+    "/src/middleware/timing/index.ts": {
+      "size": 232,
+      "checksum": "sha256-e11af5e4e86d205217f5687200ac633655d4429bf3747352ecf470743c5f9285"
+    },
+    "/src/utils/jwt/jwt.ts": {
+      "size": 3257,
+      "checksum": "sha256-5f4868bd766439e5329b95ed866783b20a7b6072c550b084fa8474f824b4fb27"
+    },
+    "/src/adapter/lambda-edge/handler.ts": {
+      "size": 5010,
+      "checksum": "sha256-d86e64b877e8b0eb69fa6d4167d293033bd862eb3d8d4528278a0902b089b74f"
+    },
+    "/src/middleware/powered-by/index.ts": {
+      "size": 278,
+      "checksum": "sha256-9a503dd6473d15ec96704ddc3098daabedb983aa97b657c7a6169c3545596ee8"
+    },
+    "/src/utils/html.ts": {
+      "size": 4708,
+      "checksum": "sha256-90d3782adafbd9b350a998303df844c363d21ff1a08c90daddb6edbd0cb501d7"
+    },
+    "/src/jsx/dom/css.ts": {
+      "size": 6419,
+      "checksum": "sha256-df539d6fe31e775a1c98f9ac872fd40b9acf3e8e8178637b5fe109e15bfbf8fb"
+    },
+    "/src/compose.ts": {
+      "size": 2808,
+      "checksum": "sha256-e20c54ad54b755f6de2ae8f8157b10398842128becf5aa2c1445126bb91e5452"
+    },
+    "/src/utils/buffer.ts": {
+      "size": 1239,
+      "checksum": "sha256-bcdd1f637347dadc37f0439b04ca17f29191a140b020822233ca5bdaa7175ec2"
+    },
+    "/src/helper/testing/index.ts": {
+      "size": 881,
+      "checksum": "sha256-2a945765a276041d7b82e27add3dd55995931d11e162fb1b2f2cefc361272192"
+    },
+    "/src/middleware/timeout/index.ts": {
+      "size": 1663,
+      "checksum": "sha256-48ba7c8a6ed04474b57aebe6063ab863e876e2b6da36360d83a73868fbc07542"
+    },
+    "/src/router/smart-router/index.ts": {
+      "size": 87,
+      "checksum": "sha256-b27bcd7c1cfb23fd552a44b12c4d2b8bae15178c706473bbb44b2c21fc5aff9d"
+    },
+    "/jsr.json": {
+      "size": 5019,
+      "checksum": "sha256-37eb82beca5582d8e53fb19a4b3ee3aeda93a3982902c03387f2170647f3ffc7"
+    },
+    "/src/middleware/jwt/index.ts": {
+      "size": 247,
+      "checksum": "sha256-791929ab5d4c6ee0f6e590e224ea2d5d028c33533a6b5d56e903fb185d29499f"
+    },
+    "/src/jsx/jsx-runtime.ts": {
+      "size": 646,
+      "checksum": "sha256-82d8e119b10820f6e401a0f24513c822532304eb9ba276533a3ef54d21b23c47"
+    },
+    "/src/adapter/cloudflare-workers/index.ts": {
+      "size": 209,
+      "checksum": "sha256-4b35df0383cc8619648b035524bee0cfcbd4fcaf8e5f937fd4f61bf5b2ecf787"
+    },
+    "/src/jsx/dom/jsx-dev-runtime.ts": {
+      "size": 656,
+      "checksum": "sha256-8c29e65dee9a1d26dc80a2a92fc5888535927291bb4052d5f1a5fcf09e9c9f02"
+    },
+    "/src/adapter/deno/conninfo.ts": {
+      "size": 364,
+      "checksum": "sha256-9be12faa06a06294586f29d8f14fdb58946176a9ee71d5e0c6610bad365f96b0"
+    },
+    "/src/helper/websocket/index.ts": {
+      "size": 1320,
+      "checksum": "sha256-ea10721e76f970d74ba83f80df85bf7f0816e0c57a3fd28c5a2fc080a917ae4b"
+    },
+    "/src/utils/ipaddr.ts": {
+      "size": 2745,
+      "checksum": "sha256-37f6580b2444dc8aa97aabd993e43ddad4a0b06fd69179c3f8df5885aeddef07"
+    },
+    "/src/adapter/deno/serve-static.ts": {
+      "size": 1154,
+      "checksum": "sha256-2f56f98c9d2ccb0a81326d732aeb79c653646daf0e925109e826e984189bcd24"
+    },
+    "/src/jsx/dom/context.ts": {
+      "size": 1484,
+      "checksum": "sha256-2324724034f67abd52afa1e5072d4f74b7465266ef5b2c541faa0a1c6333ab53"
+    },
+    "/src/router.ts": {
+      "size": 2718,
+      "checksum": "sha256-61db3b5e0a9c0c055e38882bb25c900418b324b398397e9466090f37ce34e90f"
+    },
+    "/src/utils/color.ts": {
+      "size": 675,
+      "checksum": "sha256-5fca07611a8285093e2883ed8c3f38d4ebd6c2dbc2d26fb4da4dbcd64b27a5e8"
+    },
+    "/LICENSE": {
+      "size": 1101,
+      "checksum": "sha256-a6ab98e5c77b9070c443eaff2ff81034a6f8cc05a7524d5098eb0f24defa0115"
+    },
+    "/src/middleware/compress/index.ts": {
+      "size": 1601,
+      "checksum": "sha256-b4f9584dcb199db2b42cf6bffda31b315c1d336f711e99bc8c1371bb47f04090"
+    },
+    "/src/adapter/bun/websocket.ts": {
+      "size": 3131,
+      "checksum": "sha256-2265d28b3b848e1a6b3e0abb6a92804a751e860a940fe58b31cb37c9e76612db"
+    },
+    "/src/adapter/service-worker/index.ts": {
+      "size": 97,
+      "checksum": "sha256-b72ac28a87d18ba9ef70eed4696e631a806438b1fd81147be91e8b7ae842b1e0"
+    },
+    "/src/request.ts": {
+      "size": 10307,
+      "checksum": "sha256-d43dc31bead92890486a7b4b6d6d19f4053f9ff4bd51b772f2ac35919c6bb796"
+    },
+    "/src/validator/index.ts": {
+      "size": 143,
+      "checksum": "sha256-9f1876355e4be854ab2b6f87b2d5a954bd695066f268a0bf18dab03ecae563f0"
+    },
+    "/src/utils/encode.ts": {
+      "size": 1097,
+      "checksum": "sha256-34d62ccc470166191a317197f56579441fd154239dfd7cfe0087bb81cc42efa3"
+    },
+    "/src/helper/accepts/index.ts": {
+      "size": 87,
+      "checksum": "sha256-1631b1e83e58207d0c360379cae5754ec942091d4c76e491fa1cf9b0d66c9b16"
+    },
+    "/src/middleware/pretty-json/index.ts": {
+      "size": 1253,
+      "checksum": "sha256-6e8a077c8ce86c083fffaae0e3ee5c7c7f97b44edbb0bcb0c4a51d970f1c8377"
+    },
+    "/src/adapter/aws-lambda/index.ts": {
+      "size": 305,
+      "checksum": "sha256-a4339229ee51a441b2f7bfc230d2ae78c45caf56021512db10c34229aff67a77"
+    },
+    "/src/router/trie-router/node.ts": {
+      "size": 6207,
+      "checksum": "sha256-99106d17ac363002a46d432466179a7281ae56c7ea0b8d38c363bdc2e671c935"
+    },
+    "/src/middleware/basic-auth/index.ts": {
+      "size": 3963,
+      "checksum": "sha256-e8478546606ea5ede0a78b29c10f95d73143830162634339234a89812ed8ee0a"
+    },
+    "/src/utils/jwt/index.ts": {
+      "size": 128,
+      "checksum": "sha256-af61146c3bfc794d5d9eab2b5a6aa669e3bc9b3cca77112c3bf68c6dd0e575c9"
+    },
+    "/src/helper/ssg/index.ts": {
+      "size": 190,
+      "checksum": "sha256-b88231271816583ea4d5526fe8543d5ee162bf31d6db19182bf18184703a6ab7"
+    },
+    "/src/adapter/bun/ssg.ts": {
+      "size": 724,
+      "checksum": "sha256-af817f3652893f447efb99f786b8208ccf93327dc0c2588e91e25dbbed611009"
+    },
+    "/src/utils/jwt/jwa.ts": {
+      "size": 438,
+      "checksum": "sha256-0c750b38de488cb934096ed7f50e31145554f42c4ad1e7acc1855c847a6bd1fb"
+    },
+    "/src/middleware/body-limit/index.ts": {
+      "size": 3026,
+      "checksum": "sha256-79fe66a2ac37e401d13d896073cc5e05d5b3b2e8382127dcd225ad8328c2e0d5"
+    },
+    "/src/adapter/deno/ssg.ts": {
+      "size": 846,
+      "checksum": "sha256-49d73dd0d351fc52a54bfc8094096aff957f5a955a3eb976844ed8d88903bc0f"
+    },
+    "/src/helper/css/common.ts": {
+      "size": 7558,
+      "checksum": "sha256-908cd48b39e8a06fde3a7be9686dfdccdf8725fc56920fcbb26aabfdd47d3598"
+    },
+    "/src/router/smart-router/router.ts": {
+      "size": 1684,
+      "checksum": "sha256-8c84362d94a23652663c62a45533ea6b8385778f68e7ae296eccea54b6ae049c"
+    },
+    "/src/adapter/cloudflare-pages/handler.ts": {
+      "size": 3231,
+      "checksum": "sha256-391859c3306d8f81bc5a9b7b3c449e7ffe769a67dfcc44ecd8d605d8a0be3ae4"
+    },
+    "/src/preset/tiny.ts": {
+      "size": 551,
+      "checksum": "sha256-535202c92c139f26c63f3e97a6ef651e0bbcb59407ba24ecd8ec13ebfc24e439"
+    },
+    "/src/jsx/jsx-dev-runtime.ts": {
+      "size": 694,
+      "checksum": "sha256-b6dad7a1577fa18799dd21c5c5b00c9651c6372236b8b328f73cfe6f25b9c046"
+    },
+    "/src/middleware/jsx-renderer/index.ts": {
+      "size": 4463,
+      "checksum": "sha256-b10a8a53da8a9d05190e97ca6330e7b31195f471ba9831fabd4ab1db6ff8ba9d"
+    },
+    "/src/helper/cookie/index.ts": {
+      "size": 3896,
+      "checksum": "sha256-34250dc8511610ea607bec0ecde96f3cedf381f75568689b92ab39792dfecfef"
+    },
+    "/src/jsx/children.ts": {
+      "size": 698,
+      "checksum": "sha256-26ead0f151faba5307883614b5b064299558f06798c695c432f32acbb1127d56"
+    },
+    "/src/helper/ssg/ssg.ts": {
+      "size": 11909,
+      "checksum": "sha256-a2696869caf0301c04fb9bc8623643118f862807e869defb75ae9a44be2fee1f"
+    },
+    "/src/adapter/deno/websocket.ts": {
+      "size": 1830,
+      "checksum": "sha256-a21c46758c6981b34829e068080f46dc08a3b0b14ac74bc7811eb66ead72c75b"
+    },
+    "/README.md": {
+      "size": 3820,
+      "checksum": "sha256-1ec91be7368d2ce7dd5ebd8abd74043f8a051283f2fe7dbe4fb017cae5e7240e"
+    },
+    "/src/jsx/dom/intrinsic-element/components.ts": {
+      "size": 10917,
+      "checksum": "sha256-b3419f46a8ed81fbd86d75bccdee3e30915511627809ea348631f9a322155eeb"
+    },
+    "/src/jsx/components.ts": {
+      "size": 6096,
+      "checksum": "sha256-2e132ef094facbc7be2d3d69f2b21e8e86db0128b0cacb6886c5e6a36258c2f2"
+    },
+    "/src/utils/stream.ts": {
+      "size": 2462,
+      "checksum": "sha256-8252e69f81c9e8e88804f492de52121f5bb7b58d55c0017182d72426cfda3a1f"
+    }
+  },
+  "moduleGraph2": {
+    "/src/middleware/bearer-auth/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              5,
+              29
+            ],
+            [
+              5,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../http-exception.ts",
+          "specifierRange": [
+            [
+              6,
+              30
+            ],
+            [
+              6,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              7,
+              39
+            ],
+            [
+              7,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/buffer.ts",
+          "specifierRange": [
+            [
+              8,
+              32
+            ],
+            [
+              8,
+              55
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/router/smart-router/router.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../router.ts",
+          "specifierRange": [
+            [
+              1,
+              36
+            ],
+            [
+              1,
+              53
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../router.ts",
+          "specifierRange": [
+            [
+              2,
+              71
+            ],
+            [
+              2,
+              88
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/constants.ts": {},
+    "/src/middleware/jwt/jwt.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              5,
+              29
+            ],
+            [
+              5,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../helper/cookie/index.ts",
+          "specifierRange": [
+            [
+              6,
+              43
+            ],
+            [
+              6,
+              73
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../http-exception.ts",
+          "specifierRange": [
+            [
+              7,
+              30
+            ],
+            [
+              7,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              8,
+              39
+            ],
+            [
+              8,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../utils/cookie.ts",
+          "specifierRange": [
+            [
+              9,
+              41
+            ],
+            [
+              9,
+              64
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/jwt/index.ts",
+          "specifierRange": [
+            [
+              10,
+              20
+            ],
+            [
+              10,
+              46
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              25
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../utils/jwt/jwa.ts",
+          "specifierRange": [
+            [
+              12,
+              40
+            ],
+            [
+              12,
+              64
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../utils/jwt/jws.ts",
+          "specifierRange": [
+            [
+              13,
+              34
+            ],
+            [
+              13,
+              58
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/router/pattern-router/router.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../router.ts",
+          "specifierRange": [
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              61
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../router.ts",
+          "specifierRange": [
+            [
+              1,
+              54
+            ],
+            [
+              1,
+              71
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/middleware/logger/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              5,
+              39
+            ],
+            [
+              5,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/color.ts",
+          "specifierRange": [
+            [
+              6,
+              32
+            ],
+            [
+              6,
+              54
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/url.ts",
+          "specifierRange": [
+            [
+              7,
+              24
+            ],
+            [
+              7,
+              44
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/base.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../helper/html/index.ts",
+          "specifierRange": [
+            [
+              0,
+              20
+            ],
+            [
+              0,
+              45
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../utils/html.ts",
+          "specifierRange": [
+            [
+              1,
+              74
+            ],
+            [
+              1,
+              92
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../utils/html.ts",
+          "specifierRange": [
+            [
+              2,
+              79
+            ],
+            [
+              2,
+              97
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./context.ts",
+          "specifierRange": [
+            [
+              3,
+              29
+            ],
+            [
+              3,
+              43
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./context.ts",
+          "specifierRange": [
+            [
+              4,
+              58
+            ],
+            [
+              4,
+              72
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./constants.ts",
+          "specifierRange": [
+            [
+              5,
+              29
+            ],
+            [
+              5,
+              45
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./intrinsic-elements.ts",
+          "specifierRange": [
+            [
+              9,
+              7
+            ],
+            [
+              9,
+              32
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./utils.ts",
+          "specifierRange": [
+            [
+              10,
+              65
+            ],
+            [
+              10,
+              77
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./intrinsic-element/components.ts",
+          "specifierRange": [
+            [
+              11,
+              38
+            ],
+            [
+              11,
+              73
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./intrinsic-element/common.ts",
+          "specifierRange": [
+            [
+              12,
+              29
+            ],
+            [
+              12,
+              60
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/middleware/basic-auth/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              5,
+              29
+            ],
+            [
+              5,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../http-exception.ts",
+          "specifierRange": [
+            [
+              6,
+              30
+            ],
+            [
+              6,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../request.ts",
+          "specifierRange": [
+            [
+              7,
+              33
+            ],
+            [
+              7,
+              51
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              8,
+              39
+            ],
+            [
+              8,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/buffer.ts",
+          "specifierRange": [
+            [
+              9,
+              32
+            ],
+            [
+              9,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/encode.ts",
+          "specifierRange": [
+            [
+              10,
+              29
+            ],
+            [
+              10,
+              52
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/middleware/body-limit/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              5,
+              29
+            ],
+            [
+              5,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../http-exception.ts",
+          "specifierRange": [
+            [
+              6,
+              30
+            ],
+            [
+              6,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              7,
+              39
+            ],
+            [
+              7,
+              55
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/encode.ts": {},
+    "/src/utils/url.ts": {},
+    "/src/utils/filepath.ts": {},
+    "/src/helper/websocket/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              6,
+              29
+            ],
+            [
+              6,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              7,
+              39
+            ],
+            [
+              7,
+              55
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/vercel/handler.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../hono.ts",
+          "specifierRange": [
+            [
+              1,
+              26
+            ],
+            [
+              1,
+              41
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              2,
+              36
+            ],
+            [
+              2,
+              52
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/cloudflare-workers/serve-static-module.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              1,
+              44
+            ],
+            [
+              1,
+              60
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./serve-static.ts",
+          "specifierRange": [
+            [
+              2,
+              40
+            ],
+            [
+              2,
+              59
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./serve-static.ts",
+          "specifierRange": [
+            [
+              3,
+              28
+            ],
+            [
+              3,
+              47
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/helper/ssg/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./ssg.ts",
+          "specifierRange": [
+            [
+              5,
+              14
+            ],
+            [
+              5,
+              24
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./middleware.ts",
+          "specifierRange": [
+            [
+              12,
+              7
+            ],
+            [
+              12,
+              24
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/dom/context.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../base.ts",
+          "specifierRange": [
+            [
+              0,
+              27
+            ],
+            [
+              0,
+              39
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../constants.ts",
+          "specifierRange": [
+            [
+              1,
+              34
+            ],
+            [
+              1,
+              51
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../context.ts",
+          "specifierRange": [
+            [
+              2,
+              29
+            ],
+            [
+              2,
+              44
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../context.ts",
+          "specifierRange": [
+            [
+              3,
+              31
+            ],
+            [
+              3,
+              46
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./utils.ts",
+          "specifierRange": [
+            [
+              4,
+              35
+            ],
+            [
+              4,
+              47
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/client/types.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../hono.ts",
+          "specifierRange": [
+            [
+              0,
+              26
+            ],
+            [
+              0,
+              38
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../types.ts",
+          "specifierRange": [
+            [
+              1,
+              54
+            ],
+            [
+              1,
+              67
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../utils/http-status.ts",
+          "specifierRange": [
+            [
+              2,
+              51
+            ],
+            [
+              2,
+              76
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../utils/types.ts",
+          "specifierRange": [
+            [
+              3,
+              37
+            ],
+            [
+              3,
+              56
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/dom/utils.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../constants.ts",
+          "specifierRange": [
+            [
+              0,
+              33
+            ],
+            [
+              0,
+              50
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/service-worker/types.ts": {},
+    "/src/middleware/method-override/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              5,
+              47
+            ],
+            [
+              5,
+              65
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../hono.ts",
+          "specifierRange": [
+            [
+              6,
+              26
+            ],
+            [
+              6,
+              41
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              7,
+              39
+            ],
+            [
+              7,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/body.ts",
+          "specifierRange": [
+            [
+              8,
+              26
+            ],
+            [
+              8,
+              47
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/validator/validator.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../context.ts",
+          "specifierRange": [
+            [
+              0,
+              29
+            ],
+            [
+              0,
+              44
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../helper/cookie/index.ts",
+          "specifierRange": [
+            [
+              1,
+              26
+            ],
+            [
+              1,
+              53
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../http-exception.ts",
+          "specifierRange": [
+            [
+              2,
+              30
+            ],
+            [
+              2,
+              52
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../types.ts",
+          "specifierRange": [
+            [
+              3,
+              78
+            ],
+            [
+              3,
+              91
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../utils/body.ts",
+          "specifierRange": [
+            [
+              4,
+              30
+            ],
+            [
+              4,
+              48
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../utils/buffer.ts",
+          "specifierRange": [
+            [
+              5,
+              33
+            ],
+            [
+              5,
+              53
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/context.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../helper/html/index.ts",
+          "specifierRange": [
+            [
+              0,
+              20
+            ],
+            [
+              0,
+              45
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../utils/html.ts",
+          "specifierRange": [
+            [
+              1,
+              39
+            ],
+            [
+              1,
+              57
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./base.ts",
+          "specifierRange": [
+            [
+              2,
+              32
+            ],
+            [
+              2,
+              43
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./constants.ts",
+          "specifierRange": [
+            [
+              3,
+              29
+            ],
+            [
+              3,
+              45
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./dom/context.ts",
+          "specifierRange": [
+            [
+              4,
+              46
+            ],
+            [
+              4,
+              64
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./index.ts",
+          "specifierRange": [
+            [
+              5,
+              43
+            ],
+            [
+              5,
+              55
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/cloudflare-workers/serve-static.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../middleware/serve-static/index.ts",
+          "specifierRange": [
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              87
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../middleware/serve-static/index.ts",
+          "specifierRange": [
+            [
+              1,
+              66
+            ],
+            [
+              1,
+              106
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              2,
+              44
+            ],
+            [
+              2,
+              60
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./utils.ts",
+          "specifierRange": [
+            [
+              3,
+              38
+            ],
+            [
+              3,
+              50
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/middleware/timing/timing.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              5,
+              29
+            ],
+            [
+              5,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              6,
+              39
+            ],
+            [
+              6,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              7,
+              7
+            ],
+            [
+              7,
+              25
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/deno/websocket.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../helper/websocket/index.ts",
+          "specifierRange": [
+            [
+              0,
+              63
+            ],
+            [
+              0,
+              96
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/helper/accepts/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./accepts.ts",
+          "specifierRange": [
+            [
+              5,
+              24
+            ],
+            [
+              5,
+              38
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/helper/cookie/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              5,
+              29
+            ],
+            [
+              5,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/cookie.ts",
+          "specifierRange": [
+            [
+              6,
+              63
+            ],
+            [
+              6,
+              86
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../utils/cookie.ts",
+          "specifierRange": [
+            [
+              7,
+              78
+            ],
+            [
+              7,
+              101
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/intrinsic-elements.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../utils/mime.ts",
+          "specifierRange": [
+            [
+              2,
+              30
+            ],
+            [
+              2,
+              48
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../utils/types.ts",
+          "specifierRange": [
+            [
+              3,
+              40
+            ],
+            [
+              3,
+              59
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/middleware/cache/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              5,
+              29
+            ],
+            [
+              5,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              6,
+              39
+            ],
+            [
+              6,
+              55
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/cloudflare-workers/websocket.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../helper/websocket/index.ts",
+          "specifierRange": [
+            [
+              0,
+              63
+            ],
+            [
+              0,
+              96
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/bun/websocket.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../helper/websocket/index.ts",
+          "specifierRange": [
+            [
+              0,
+              37
+            ],
+            [
+              0,
+              70
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../helper/websocket/index.ts",
+          "specifierRange": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              40
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./server.ts",
+          "specifierRange": [
+            [
+              7,
+              29
+            ],
+            [
+              7,
+              42
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/handler.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../hono-base.ts",
+          "specifierRange": [
+            [
+              5,
+              33
+            ],
+            [
+              5,
+              50
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/lambda-edge/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./handler.ts",
+          "specifierRange": [
+            [
+              5,
+              23
+            ],
+            [
+              5,
+              37
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./conninfo.ts",
+          "specifierRange": [
+            [
+              6,
+              28
+            ],
+            [
+              6,
+              43
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./handler.ts",
+          "specifierRange": [
+            [
+              13,
+              7
+            ],
+            [
+              13,
+              21
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/dom/render.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../base.ts",
+          "specifierRange": [
+            [
+              0,
+              47
+            ],
+            [
+              0,
+              59
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../children.ts",
+          "specifierRange": [
+            [
+              1,
+              24
+            ],
+            [
+              1,
+              40
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../constants.ts",
+          "specifierRange": [
+            [
+              2,
+              77
+            ],
+            [
+              2,
+              94
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../context.ts",
+          "specifierRange": [
+            [
+              3,
+              43
+            ],
+            [
+              3,
+              58
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../context.ts",
+          "specifierRange": [
+            [
+              4,
+              64
+            ],
+            [
+              4,
+              79
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../hooks/index.ts",
+          "specifierRange": [
+            [
+              5,
+              32
+            ],
+            [
+              5,
+              51
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../hooks/index.ts",
+          "specifierRange": [
+            [
+              6,
+              29
+            ],
+            [
+              6,
+              48
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../utils.ts",
+          "specifierRange": [
+            [
+              7,
+              65
+            ],
+            [
+              7,
+              78
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./context.ts",
+          "specifierRange": [
+            [
+              8,
+              30
+            ],
+            [
+              8,
+              44
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/deno/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./serve-static.ts",
+          "specifierRange": [
+            [
+              5,
+              28
+            ],
+            [
+              5,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./ssg.ts",
+          "specifierRange": [
+            [
+              6,
+              44
+            ],
+            [
+              6,
+              54
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./websocket.ts",
+          "specifierRange": [
+            [
+              7,
+              33
+            ],
+            [
+              7,
+              49
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./conninfo.ts",
+          "specifierRange": [
+            [
+              8,
+              28
+            ],
+            [
+              8,
+              43
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/dom/server.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../base.ts",
+          "specifierRange": [
+            [
+              5,
+              27
+            ],
+            [
+              5,
+              39
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../streaming.ts",
+          "specifierRange": [
+            [
+              6,
+              69
+            ],
+            [
+              6,
+              86
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./index.ts",
+          "specifierRange": [
+            [
+              7,
+              20
+            ],
+            [
+              7,
+              32
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../utils/html.ts",
+          "specifierRange": [
+            [
+              8,
+              39
+            ],
+            [
+              8,
+              60
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/router/trie-router/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./router.ts",
+          "specifierRange": [
+            [
+              5,
+              27
+            ],
+            [
+              5,
+              40
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/service-worker/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./handler.ts",
+          "specifierRange": [
+            [
+              4,
+              23
+            ],
+            [
+              4,
+              37
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/middleware/combine/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              5,
+              29
+            ],
+            [
+              5,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              6,
+              45
+            ],
+            [
+              6,
+              61
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../router/trie-router/index.ts",
+          "specifierRange": [
+            [
+              7,
+              27
+            ],
+            [
+              7,
+              62
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../router.ts",
+          "specifierRange": [
+            [
+              8,
+              32
+            ],
+            [
+              8,
+              49
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../compose.ts",
+          "specifierRange": [
+            [
+              9,
+              24
+            ],
+            [
+              9,
+              42
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/dom/intrinsic-element/components.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../base.ts",
+          "specifierRange": [
+            [
+              0,
+              27
+            ],
+            [
+              0,
+              42
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              1,
+              63
+            ],
+            [
+              1,
+              79
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../render.ts",
+          "specifierRange": [
+            [
+              2,
+              50
+            ],
+            [
+              2,
+              64
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../render.ts",
+          "specifierRange": [
+            [
+              3,
+              38
+            ],
+            [
+              3,
+              52
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              4,
+              27
+            ],
+            [
+              4,
+              45
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../hooks/index.ts",
+          "specifierRange": [
+            [
+              5,
+              52
+            ],
+            [
+              5,
+              74
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../hooks/index.ts",
+          "specifierRange": [
+            [
+              6,
+              44
+            ],
+            [
+              6,
+              63
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../intrinsic-element/common.ts",
+          "specifierRange": [
+            [
+              7,
+              63
+            ],
+            [
+              7,
+              98
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../intrinsic-elements.ts",
+          "specifierRange": [
+            [
+              8,
+              39
+            ],
+            [
+              8,
+              68
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/request.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./router.ts",
+          "specifierRange": [
+            [
+              1,
+              28
+            ],
+            [
+              1,
+              41
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./types.ts",
+          "specifierRange": [
+            [
+              10,
+              7
+            ],
+            [
+              10,
+              19
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./utils/body.ts",
+          "specifierRange": [
+            [
+              11,
+              26
+            ],
+            [
+              11,
+              43
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./utils/body.ts",
+          "specifierRange": [
+            [
+              12,
+              48
+            ],
+            [
+              12,
+              65
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./utils/types.ts",
+          "specifierRange": [
+            [
+              13,
+              51
+            ],
+            [
+              13,
+              69
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./utils/url.ts",
+          "specifierRange": [
+            [
+              14,
+              67
+            ],
+            [
+              14,
+              83
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/crypto.ts": {},
+    "/src/adapter/vercel/conninfo.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../helper/conninfo/index.ts",
+          "specifierRange": [
+            [
+              0,
+              33
+            ],
+            [
+              0,
+              65
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/client/utils.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./types.ts",
+          "specifierRange": [
+            [
+              0,
+              32
+            ],
+            [
+              0,
+              44
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/bun/serve-static.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../middleware/serve-static/index.ts",
+          "specifierRange": [
+            [
+              1,
+              47
+            ],
+            [
+              1,
+              87
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../middleware/serve-static/index.ts",
+          "specifierRange": [
+            [
+              2,
+              40
+            ],
+            [
+              2,
+              80
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              3,
+              44
+            ],
+            [
+              3,
+              60
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "node:fs/promises",
+          "specifierRange": [
+            [
+              4,
+              21
+            ],
+            [
+              4,
+              39
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/helper/streaming/sse.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              0,
+              29
+            ],
+            [
+              0,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/stream.ts",
+          "specifierRange": [
+            [
+              1,
+              29
+            ],
+            [
+              1,
+              52
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/jwt/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./jwt.ts",
+          "specifierRange": [
+            [
+              5,
+              37
+            ],
+            [
+              5,
+              47
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/helper/testing/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../client/index.ts",
+          "specifierRange": [
+            [
+              5,
+              19
+            ],
+            [
+              5,
+              42
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../client/types.ts",
+          "specifierRange": [
+            [
+              6,
+              28
+            ],
+            [
+              6,
+              51
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              7,
+              38
+            ],
+            [
+              7,
+              56
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../hono.ts",
+          "specifierRange": [
+            [
+              8,
+              26
+            ],
+            [
+              8,
+              41
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              9,
+              28
+            ],
+            [
+              9,
+              44
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../utils/types.ts",
+          "specifierRange": [
+            [
+              10,
+              41
+            ],
+            [
+              10,
+              63
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/cloudflare-workers/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./serve-static-module.ts",
+          "specifierRange": [
+            [
+              5,
+              28
+            ],
+            [
+              5,
+              54
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./websocket.ts",
+          "specifierRange": [
+            [
+              6,
+              33
+            ],
+            [
+              6,
+              49
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./conninfo.ts",
+          "specifierRange": [
+            [
+              7,
+              28
+            ],
+            [
+              7,
+              43
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/bun/conninfo.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../index.ts",
+          "specifierRange": [
+            [
+              0,
+              29
+            ],
+            [
+              0,
+              45
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../helper/conninfo/index.ts",
+          "specifierRange": [
+            [
+              1,
+              33
+            ],
+            [
+              1,
+              65
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./server.ts",
+          "specifierRange": [
+            [
+              2,
+              29
+            ],
+            [
+              2,
+              42
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/jwt/jwa.ts": {},
+    "/src/jsx/jsx-runtime.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./jsx-dev-runtime.ts",
+          "specifierRange": [
+            [
+              5,
+              40
+            ],
+            [
+              5,
+              62
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./jsx-dev-runtime.ts",
+          "specifierRange": [
+            [
+              6,
+              31
+            ],
+            [
+              6,
+              53
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./jsx-dev-runtime.ts",
+          "specifierRange": [
+            [
+              7,
+              25
+            ],
+            [
+              7,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../helper/html/index.ts",
+          "specifierRange": [
+            [
+              9,
+              26
+            ],
+            [
+              9,
+              51
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../utils/html.ts",
+          "specifierRange": [
+            [
+              10,
+              39
+            ],
+            [
+              10,
+              57
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/jwt/jws.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../helper/adapter/index.ts",
+          "specifierRange": [
+            [
+              6,
+              30
+            ],
+            [
+              6,
+              61
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../encode.ts",
+          "specifierRange": [
+            [
+              7,
+              29
+            ],
+            [
+              7,
+              43
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./jwa.ts",
+          "specifierRange": [
+            [
+              8,
+              40
+            ],
+            [
+              8,
+              50
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./types.ts",
+          "specifierRange": [
+            [
+              9,
+              59
+            ],
+            [
+              9,
+              71
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./utf8.ts",
+          "specifierRange": [
+            [
+              10,
+              28
+            ],
+            [
+              10,
+              39
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/router/reg-exp-router/router.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../router.ts",
+          "specifierRange": [
+            [
+              1,
+              51
+            ],
+            [
+              1,
+              68
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../router.ts",
+          "specifierRange": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              24
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/url.ts",
+          "specifierRange": [
+            [
+              7,
+              39
+            ],
+            [
+              7,
+              59
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./node.ts",
+          "specifierRange": [
+            [
+              8,
+              27
+            ],
+            [
+              8,
+              38
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./node.ts",
+          "specifierRange": [
+            [
+              9,
+              37
+            ],
+            [
+              9,
+              48
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./trie.ts",
+          "specifierRange": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              32
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/helper/streaming/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./stream.ts",
+          "specifierRange": [
+            [
+              5,
+              23
+            ],
+            [
+              5,
+              36
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./sse.ts",
+          "specifierRange": [
+            [
+              6,
+              32
+            ],
+            [
+              6,
+              42
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./sse.ts",
+          "specifierRange": [
+            [
+              7,
+              43
+            ],
+            [
+              7,
+              53
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./text.ts",
+          "specifierRange": [
+            [
+              8,
+              27
+            ],
+            [
+              8,
+              38
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/lambda-edge/conninfo.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../helper/conninfo/index.ts",
+          "specifierRange": [
+            [
+              0,
+              33
+            ],
+            [
+              0,
+              65
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./handler.ts",
+          "specifierRange": [
+            [
+              1,
+              41
+            ],
+            [
+              1,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              2,
+              29
+            ],
+            [
+              2,
+              47
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/bun/ssg.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../helper/ssg/index.ts",
+          "specifierRange": [
+            [
+              1,
+              35
+            ],
+            [
+              1,
+              62
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../helper/ssg/index.ts",
+          "specifierRange": [
+            [
+              2,
+              61
+            ],
+            [
+              2,
+              88
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/http-status.ts": {},
+    "/src/middleware/jsx-renderer/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              6,
+              47
+            ],
+            [
+              6,
+              65
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../helper/html/index.ts",
+          "specifierRange": [
+            [
+              7,
+              26
+            ],
+            [
+              7,
+              54
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../jsx/index.ts",
+          "specifierRange": [
+            [
+              8,
+              57
+            ],
+            [
+              8,
+              77
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../jsx/index.ts",
+          "specifierRange": [
+            [
+              9,
+              75
+            ],
+            [
+              9,
+              95
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../jsx/streaming.ts",
+          "specifierRange": [
+            [
+              10,
+              39
+            ],
+            [
+              10,
+              63
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              11,
+              51
+            ],
+            [
+              11,
+              67
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../utils/html.ts",
+          "specifierRange": [
+            [
+              12,
+              39
+            ],
+            [
+              12,
+              60
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/helper/css/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../html/index.ts",
+          "specifierRange": [
+            [
+              5,
+              20
+            ],
+            [
+              5,
+              38
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../jsx/constants.ts",
+          "specifierRange": [
+            [
+              6,
+              29
+            ],
+            [
+              6,
+              53
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../jsx/dom/css.ts",
+          "specifierRange": [
+            [
+              7,
+              39
+            ],
+            [
+              7,
+              61
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../utils/html.ts",
+          "specifierRange": [
+            [
+              8,
+              60
+            ],
+            [
+              8,
+              81
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./common.ts",
+          "specifierRange": [
+            [
+              9,
+              73
+            ],
+            [
+              9,
+              86
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./common.ts",
+          "specifierRange": [
+            [
+              21,
+              7
+            ],
+            [
+              21,
+              20
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./common.ts",
+          "specifierRange": [
+            [
+              22,
+              29
+            ],
+            [
+              22,
+              42
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/helper/conninfo/types.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              0,
+              29
+            ],
+            [
+              0,
+              47
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/helper/ssg/ssg.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../client/utils.ts",
+          "specifierRange": [
+            [
+              0,
+              32
+            ],
+            [
+              0,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../hono.ts",
+          "specifierRange": [
+            [
+              1,
+              26
+            ],
+            [
+              1,
+              41
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              2,
+              33
+            ],
+            [
+              2,
+              49
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/concurrent.ts",
+          "specifierRange": [
+            [
+              3,
+              27
+            ],
+            [
+              3,
+              54
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/mime.ts",
+          "specifierRange": [
+            [
+              4,
+              29
+            ],
+            [
+              4,
+              50
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./middleware.ts",
+          "specifierRange": [
+            [
+              5,
+              52
+            ],
+            [
+              5,
+              69
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./middleware.ts",
+          "specifierRange": [
+            [
+              6,
+              59
+            ],
+            [
+              6,
+              76
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./utils.ts",
+          "specifierRange": [
+            [
+              7,
+              63
+            ],
+            [
+              7,
+              75
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/helper/css/common.ts": {},
+    "/src/adapter/netlify/handler.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../hono.ts",
+          "specifierRange": [
+            [
+              1,
+              26
+            ],
+            [
+              1,
+              41
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/deno/ssg.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../helper/ssg/index.ts",
+          "specifierRange": [
+            [
+              0,
+              35
+            ],
+            [
+              0,
+              62
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../helper/ssg/index.ts",
+          "specifierRange": [
+            [
+              1,
+              61
+            ],
+            [
+              1,
+              88
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/lambda-edge/handler.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "node:crypto",
+          "specifierRange": [
+            [
+              0,
+              19
+            ],
+            [
+              0,
+              32
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../hono.ts",
+          "specifierRange": [
+            [
+              1,
+              26
+            ],
+            [
+              1,
+              41
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/encode.ts",
+          "specifierRange": [
+            [
+              3,
+              43
+            ],
+            [
+              3,
+              66
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/jwt/jwt.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../encode.ts",
+          "specifierRange": [
+            [
+              6,
+              49
+            ],
+            [
+              6,
+              63
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./jwa.ts",
+          "specifierRange": [
+            [
+              7,
+              31
+            ],
+            [
+              7,
+              41
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./jwa.ts",
+          "specifierRange": [
+            [
+              8,
+              40
+            ],
+            [
+              8,
+              50
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./jws.ts",
+          "specifierRange": [
+            [
+              9,
+              35
+            ],
+            [
+              9,
+              45
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./jws.ts",
+          "specifierRange": [
+            [
+              10,
+              34
+            ],
+            [
+              10,
+              44
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./types.ts",
+          "specifierRange": [
+            [
+              18,
+              7
+            ],
+            [
+              18,
+              19
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./types.ts",
+          "specifierRange": [
+            [
+              19,
+              32
+            ],
+            [
+              19,
+              44
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./utf8.ts",
+          "specifierRange": [
+            [
+              20,
+              41
+            ],
+            [
+              20,
+              52
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/dom/jsx-runtime.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./jsx-dev-runtime.ts",
+          "specifierRange": [
+            [
+              5,
+              40
+            ],
+            [
+              5,
+              62
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./jsx-dev-runtime.ts",
+          "specifierRange": [
+            [
+              6,
+              31
+            ],
+            [
+              6,
+              53
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./hono.ts",
+          "specifierRange": [
+            [
+              16,
+              21
+            ],
+            [
+              16,
+              32
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./types.ts",
+          "specifierRange": [
+            [
+              33,
+              7
+            ],
+            [
+              33,
+              19
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./context.ts",
+          "specifierRange": [
+            [
+              37,
+              84
+            ],
+            [
+              37,
+              98
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./request.ts",
+          "specifierRange": [
+            [
+              41,
+              33
+            ],
+            [
+              41,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./client/index.ts",
+          "specifierRange": [
+            [
+              45,
+              79
+            ],
+            [
+              45,
+              98
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/dom/hooks/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              4,
+              29
+            ],
+            [
+              4,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              5,
+              27
+            ],
+            [
+              5,
+              45
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../context.ts",
+          "specifierRange": [
+            [
+              6,
+              30
+            ],
+            [
+              6,
+              45
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../hooks/index.ts",
+          "specifierRange": [
+            [
+              7,
+              38
+            ],
+            [
+              7,
+              60
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../constants.ts",
+          "specifierRange": [
+            [
+              8,
+              26
+            ],
+            [
+              8,
+              46
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/intrinsic-element/components.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../utils/html.ts",
+          "specifierRange": [
+            [
+              0,
+              60
+            ],
+            [
+              0,
+              81
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../base.ts",
+          "specifierRange": [
+            [
+              1,
+              45
+            ],
+            [
+              1,
+              57
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../context.ts",
+          "specifierRange": [
+            [
+              2,
+              27
+            ],
+            [
+              2,
+              42
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../base.ts",
+          "specifierRange": [
+            [
+              3,
+              34
+            ],
+            [
+              3,
+              46
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../types.ts",
+          "specifierRange": [
+            [
+              4,
+              43
+            ],
+            [
+              4,
+              56
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../helper/html/index.ts",
+          "specifierRange": [
+            [
+              5,
+              20
+            ],
+            [
+              5,
+              48
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./common.ts",
+          "specifierRange": [
+            [
+              6,
+              49
+            ],
+            [
+              6,
+              62
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../constants.ts",
+          "specifierRange": [
+            [
+              7,
+              26
+            ],
+            [
+              7,
+              43
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../children.ts",
+          "specifierRange": [
+            [
+              8,
+              24
+            ],
+            [
+              8,
+              40
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../intrinsic-elements.ts",
+          "specifierRange": [
+            [
+              9,
+              39
+            ],
+            [
+              9,
+              65
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/hono-base.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./compose.ts",
+          "specifierRange": [
+            [
+              6,
+              24
+            ],
+            [
+              6,
+              38
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./context.ts",
+          "specifierRange": [
+            [
+              7,
+              24
+            ],
+            [
+              7,
+              38
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./context.ts",
+          "specifierRange": [
+            [
+              8,
+              38
+            ],
+            [
+              8,
+              52
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./router.ts",
+          "specifierRange": [
+            [
+              9,
+              28
+            ],
+            [
+              9,
+              41
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./router.ts",
+          "specifierRange": [
+            [
+              10,
+              68
+            ],
+            [
+              10,
+              81
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./types.ts",
+          "specifierRange": [
+            [
+              27,
+              7
+            ],
+            [
+              27,
+              19
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./utils/url.ts",
+          "specifierRange": [
+            [
+              28,
+              52
+            ],
+            [
+              28,
+              68
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/router/linear-router/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./router.ts",
+          "specifierRange": [
+            [
+              5,
+              29
+            ],
+            [
+              5,
+              42
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/types.ts": {},
+    "/src/context.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./request.ts",
+          "specifierRange": [
+            [
+              0,
+              28
+            ],
+            [
+              0,
+              42
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./router.ts",
+          "specifierRange": [
+            [
+              1,
+              28
+            ],
+            [
+              1,
+              41
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./types.ts",
+          "specifierRange": [
+            [
+              10,
+              7
+            ],
+            [
+              10,
+              19
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./utils/html.ts",
+          "specifierRange": [
+            [
+              11,
+              58
+            ],
+            [
+              11,
+              75
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./utils/http-status.ts",
+          "specifierRange": [
+            [
+              12,
+              52
+            ],
+            [
+              12,
+              76
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./utils/types.ts",
+          "specifierRange": [
+            [
+              19,
+              7
+            ],
+            [
+              19,
+              25
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./utils/mime.ts",
+          "specifierRange": [
+            [
+              20,
+              30
+            ],
+            [
+              20,
+              47
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/cloudflare-workers/utils.ts": {},
+    "/src/jsx/utils.ts": {},
+    "/src/helper/adapter/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              5,
+              29
+            ],
+            [
+              5,
+              47
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/helper/ssg/utils.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../hono.ts",
+          "specifierRange": [
+            [
+              0,
+              26
+            ],
+            [
+              0,
+              41
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../router.ts",
+          "specifierRange": [
+            [
+              1,
+              32
+            ],
+            [
+              1,
+              49
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              2,
+              38
+            ],
+            [
+              2,
+              54
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/handler.ts",
+          "specifierRange": [
+            [
+              3,
+              48
+            ],
+            [
+              3,
+              72
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/preset/tiny.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../hono-base.ts",
+          "specifierRange": [
+            [
+              5,
+              25
+            ],
+            [
+              5,
+              42
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../hono-base.ts",
+          "specifierRange": [
+            [
+              6,
+              33
+            ],
+            [
+              6,
+              50
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../router/pattern-router/index.ts",
+          "specifierRange": [
+            [
+              7,
+              30
+            ],
+            [
+              7,
+              65
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../types.ts",
+          "specifierRange": [
+            [
+              8,
+              56
+            ],
+            [
+              8,
+              69
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/router/trie-router/node.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../router.ts",
+          "specifierRange": [
+            [
+              0,
+              28
+            ],
+            [
+              0,
+              45
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../router.ts",
+          "specifierRange": [
+            [
+              1,
+              32
+            ],
+            [
+              1,
+              49
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../utils/url.ts",
+          "specifierRange": [
+            [
+              2,
+              29
+            ],
+            [
+              2,
+              49
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/url.ts",
+          "specifierRange": [
+            [
+              3,
+              56
+            ],
+            [
+              3,
+              76
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/router/reg-exp-router/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./router.ts",
+          "specifierRange": [
+            [
+              5,
+              29
+            ],
+            [
+              5,
+              42
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/vercel/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./handler.ts",
+          "specifierRange": [
+            [
+              5,
+              23
+            ],
+            [
+              5,
+              37
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./conninfo.ts",
+          "specifierRange": [
+            [
+              6,
+              28
+            ],
+            [
+              6,
+              43
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/color.ts": {},
+    "/src/jsx/intrinsic-element/common.ts": {},
+    "/src/utils/ipaddr.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../helper/conninfo/index.ts",
+          "specifierRange": [
+            [
+              5,
+              33
+            ],
+            [
+              5,
+              62
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/netlify/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./mod.ts",
+          "specifierRange": [
+            [
+              5,
+              14
+            ],
+            [
+              5,
+              24
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/helper/ssg/middleware.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              0,
+              29
+            ],
+            [
+              0,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              1,
+              44
+            ],
+            [
+              1,
+              60
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/dom/jsx-dev-runtime.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../base.ts",
+          "specifierRange": [
+            [
+              5,
+              36
+            ],
+            [
+              5,
+              48
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./intrinsic-element/components.ts",
+          "specifierRange": [
+            [
+              6,
+              38
+            ],
+            [
+              6,
+              73
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/aws-lambda/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./handler.ts",
+          "specifierRange": [
+            [
+              5,
+              37
+            ],
+            [
+              5,
+              51
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./handler.ts",
+          "specifierRange": [
+            [
+              6,
+              56
+            ],
+            [
+              6,
+              70
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./types.ts",
+          "specifierRange": [
+            [
+              12,
+              7
+            ],
+            [
+              12,
+              19
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/middleware/etag/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              5,
+              39
+            ],
+            [
+              5,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/crypto.ts",
+          "specifierRange": [
+            [
+              6,
+              21
+            ],
+            [
+              6,
+              44
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/middleware/request-id/request-id.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              5,
+              29
+            ],
+            [
+              5,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              6,
+              39
+            ],
+            [
+              6,
+              55
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/helper/streaming/text.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              0,
+              29
+            ],
+            [
+              0,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              1,
+              27
+            ],
+            [
+              1,
+              45
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../utils/stream.ts",
+          "specifierRange": [
+            [
+              2,
+              34
+            ],
+            [
+              2,
+              57
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./index.ts",
+          "specifierRange": [
+            [
+              3,
+              23
+            ],
+            [
+              3,
+              35
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/jwt/types.ts": {},
+    "/src/helper/streaming/stream.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              0,
+              29
+            ],
+            [
+              0,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/stream.ts",
+          "specifierRange": [
+            [
+              1,
+              29
+            ],
+            [
+              1,
+              52
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/compose.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./context.ts",
+          "specifierRange": [
+            [
+              0,
+              24
+            ],
+            [
+              0,
+              38
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./router.ts",
+          "specifierRange": [
+            [
+              1,
+              43
+            ],
+            [
+              1,
+              56
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./types.ts",
+          "specifierRange": [
+            [
+              2,
+              56
+            ],
+            [
+              2,
+              68
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/cloudflare-pages/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./handler.ts",
+          "specifierRange": [
+            [
+              5,
+              54
+            ],
+            [
+              5,
+              68
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./handler.ts",
+          "specifierRange": [
+            [
+              6,
+              34
+            ],
+            [
+              6,
+              48
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/router/pattern-router/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./router.ts",
+          "specifierRange": [
+            [
+              5,
+              30
+            ],
+            [
+              5,
+              43
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/stream.ts": {},
+    "/src/middleware/trailing-slash/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              5,
+              39
+            ],
+            [
+              5,
+              55
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/middleware/serve-static/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              5,
+              35
+            ],
+            [
+              5,
+              53
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              6,
+              44
+            ],
+            [
+              6,
+              60
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/filepath.ts",
+          "specifierRange": [
+            [
+              7,
+              63
+            ],
+            [
+              7,
+              88
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/mime.ts",
+          "specifierRange": [
+            [
+              8,
+              28
+            ],
+            [
+              8,
+              49
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/hooks/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../base.ts",
+          "specifierRange": [
+            [
+              0,
+              25
+            ],
+            [
+              0,
+              37
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../constants.ts",
+          "specifierRange": [
+            [
+              1,
+              26
+            ],
+            [
+              1,
+              43
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../dom/render.ts",
+          "specifierRange": [
+            [
+              2,
+              39
+            ],
+            [
+              2,
+              57
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../dom/render.ts",
+          "specifierRange": [
+            [
+              3,
+              72
+            ],
+            [
+              3,
+              90
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/aws-lambda/types.ts": {},
+    "/src/jsx/dom/client.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../base.ts",
+          "specifierRange": [
+            [
+              5,
+              27
+            ],
+            [
+              5,
+              39
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../hooks/index.ts",
+          "specifierRange": [
+            [
+              6,
+              25
+            ],
+            [
+              6,
+              44
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./render.ts",
+          "specifierRange": [
+            [
+              7,
+              38
+            ],
+            [
+              7,
+              51
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./render.ts",
+          "specifierRange": [
+            [
+              8,
+              32
+            ],
+            [
+              8,
+              45
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/mime.ts": {},
+    "/src/client/client.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../hono.ts",
+          "specifierRange": [
+            [
+              0,
+              26
+            ],
+            [
+              0,
+              38
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../types.ts",
+          "specifierRange": [
+            [
+              1,
+              50
+            ],
+            [
+              1,
+              63
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../utils/cookie.ts",
+          "specifierRange": [
+            [
+              2,
+              26
+            ],
+            [
+              2,
+              46
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../utils/types.ts",
+          "specifierRange": [
+            [
+              3,
+              41
+            ],
+            [
+              3,
+              60
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./types.ts",
+          "specifierRange": [
+            [
+              4,
+              60
+            ],
+            [
+              4,
+              72
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./utils.ts",
+          "specifierRange": [
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              19
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/children.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./base.ts",
+          "specifierRange": [
+            [
+              0,
+              27
+            ],
+            [
+              0,
+              38
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/router/smart-router/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./router.ts",
+          "specifierRange": [
+            [
+              5,
+              28
+            ],
+            [
+              5,
+              41
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/body.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../request.ts",
+          "specifierRange": [
+            [
+              5,
+              28
+            ],
+            [
+              5,
+              43
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/router/trie-router/router.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../router.ts",
+          "specifierRange": [
+            [
+              0,
+              36
+            ],
+            [
+              0,
+              53
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/url.ts",
+          "specifierRange": [
+            [
+              1,
+              39
+            ],
+            [
+              1,
+              59
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./node.ts",
+          "specifierRange": [
+            [
+              2,
+              21
+            ],
+            [
+              2,
+              32
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/components.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../helper/html/index.ts",
+          "specifierRange": [
+            [
+              0,
+              20
+            ],
+            [
+              0,
+              45
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../utils/html.ts",
+          "specifierRange": [
+            [
+              1,
+              60
+            ],
+            [
+              1,
+              78
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../utils/html.ts",
+          "specifierRange": [
+            [
+              2,
+              58
+            ],
+            [
+              2,
+              76
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./constants.ts",
+          "specifierRange": [
+            [
+              3,
+              29
+            ],
+            [
+              3,
+              45
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./dom/components.ts",
+          "specifierRange": [
+            [
+              4,
+              58
+            ],
+            [
+              4,
+              79
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./dom/render.ts",
+          "specifierRange": [
+            [
+              5,
+              36
+            ],
+            [
+              5,
+              53
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./index.ts",
+          "specifierRange": [
+            [
+              6,
+              50
+            ],
+            [
+              6,
+              62
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/middleware/csrf/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              5,
+              29
+            ],
+            [
+              5,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../http-exception.ts",
+          "specifierRange": [
+            [
+              6,
+              30
+            ],
+            [
+              6,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              7,
+              39
+            ],
+            [
+              7,
+              55
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/cookie.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./url.ts",
+          "specifierRange": [
+            [
+              5,
+              36
+            ],
+            [
+              5,
+              46
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/helper/html/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/html.ts",
+          "specifierRange": [
+            [
+              5,
+              79
+            ],
+            [
+              5,
+              100
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../utils/html.ts",
+          "specifierRange": [
+            [
+              6,
+              79
+            ],
+            [
+              6,
+              100
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/deno/serve-static.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../middleware/serve-static/index.ts",
+          "specifierRange": [
+            [
+              0,
+              40
+            ],
+            [
+              0,
+              80
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../middleware/serve-static/index.ts",
+          "specifierRange": [
+            [
+              1,
+              47
+            ],
+            [
+              1,
+              87
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              2,
+              44
+            ],
+            [
+              2,
+              60
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./base.ts",
+          "specifierRange": [
+            [
+              5,
+              89
+            ],
+            [
+              5,
+              100
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./base.ts",
+          "specifierRange": [
+            [
+              6,
+              35
+            ],
+            [
+              6,
+              46
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./children.ts",
+          "specifierRange": [
+            [
+              7,
+              25
+            ],
+            [
+              7,
+              40
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./components.ts",
+          "specifierRange": [
+            [
+              8,
+              30
+            ],
+            [
+              8,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./context.ts",
+          "specifierRange": [
+            [
+              9,
+              42
+            ],
+            [
+              9,
+              56
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./hooks/index.ts",
+          "specifierRange": [
+            [
+              31,
+              7
+            ],
+            [
+              31,
+              25
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./dom/hooks/index.ts",
+          "specifierRange": [
+            [
+              32,
+              46
+            ],
+            [
+              32,
+              68
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./streaming.ts",
+          "specifierRange": [
+            [
+              33,
+              25
+            ],
+            [
+              33,
+              41
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./types.ts",
+          "specifierRange": [
+            [
+              111,
+              19
+            ],
+            [
+              111,
+              31
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./intrinsic-elements.ts",
+          "specifierRange": [
+            [
+              113,
+              25
+            ],
+            [
+              113,
+              50
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/types.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./base.ts",
+          "specifierRange": [
+            [
+              3,
+              36
+            ],
+            [
+              3,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./intrinsic-elements.ts",
+          "specifierRange": [
+            [
+              4,
+              25
+            ],
+            [
+              4,
+              50
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./base.ts",
+          "specifierRange": [
+            [
+              6,
+              40
+            ],
+            [
+              6,
+              51
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./hooks/index.ts",
+          "specifierRange": [
+            [
+              7,
+              31
+            ],
+            [
+              7,
+              49
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./context.ts",
+          "specifierRange": [
+            [
+              8,
+              29
+            ],
+            [
+              8,
+              43
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/router/reg-exp-router/trie.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./node.ts",
+          "specifierRange": [
+            [
+              0,
+              46
+            ],
+            [
+              0,
+              57
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./node.ts",
+          "specifierRange": [
+            [
+              1,
+              21
+            ],
+            [
+              1,
+              32
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/http-exception.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./utils/http-status.ts",
+          "specifierRange": [
+            [
+              5,
+              32
+            ],
+            [
+              5,
+              56
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/netlify/mod.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./handler.ts",
+          "specifierRange": [
+            [
+              0,
+              23
+            ],
+            [
+              0,
+              37
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/preset/quick.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../hono-base.ts",
+          "specifierRange": [
+            [
+              5,
+              25
+            ],
+            [
+              5,
+              42
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../hono-base.ts",
+          "specifierRange": [
+            [
+              6,
+              33
+            ],
+            [
+              6,
+              50
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../router/linear-router/index.ts",
+          "specifierRange": [
+            [
+              7,
+              29
+            ],
+            [
+              7,
+              63
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../router/smart-router/index.ts",
+          "specifierRange": [
+            [
+              8,
+              28
+            ],
+            [
+              8,
+              61
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../router/trie-router/index.ts",
+          "specifierRange": [
+            [
+              9,
+              27
+            ],
+            [
+              9,
+              59
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../types.ts",
+          "specifierRange": [
+            [
+              10,
+              56
+            ],
+            [
+              10,
+              69
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/buffer.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./crypto.ts",
+          "specifierRange": [
+            [
+              5,
+              23
+            ],
+            [
+              5,
+              36
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/middleware/compress/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              5,
+              39
+            ],
+            [
+              5,
+              55
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/bun/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./serve-static.ts",
+          "specifierRange": [
+            [
+              5,
+              28
+            ],
+            [
+              5,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./ssg.ts",
+          "specifierRange": [
+            [
+              6,
+              43
+            ],
+            [
+              6,
+              53
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./websocket.ts",
+          "specifierRange": [
+            [
+              7,
+              35
+            ],
+            [
+              7,
+              51
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./conninfo.ts",
+          "specifierRange": [
+            [
+              8,
+              28
+            ],
+            [
+              8,
+              43
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/bun/server.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              4,
+              29
+            ],
+            [
+              4,
+              47
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/dom/css.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../index.ts",
+          "specifierRange": [
+            [
+              5,
+              43
+            ],
+            [
+              5,
+              56
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../helper/css/common.ts",
+          "specifierRange": [
+            [
+              6,
+              51
+            ],
+            [
+              6,
+              79
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../helper/css/common.ts",
+          "specifierRange": [
+            [
+              18,
+              7
+            ],
+            [
+              18,
+              35
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "../../helper/css/common.ts",
+          "specifierRange": [
+            [
+              19,
+              29
+            ],
+            [
+              19,
+              57
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/helper/conninfo/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./types.ts",
+          "specifierRange": [
+            [
+              5,
+              69
+            ],
+            [
+              5,
+              81
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/dom/components.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../index.ts",
+          "specifierRange": [
+            [
+              0,
+              50
+            ],
+            [
+              0,
+              63
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../components.ts",
+          "specifierRange": [
+            [
+              1,
+              50
+            ],
+            [
+              1,
+              68
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../constants.ts",
+          "specifierRange": [
+            [
+              2,
+              34
+            ],
+            [
+              2,
+              51
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./jsx-runtime.ts",
+          "specifierRange": [
+            [
+              3,
+              25
+            ],
+            [
+              3,
+              43
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/concurrent.ts": {},
+    "/src/middleware/powered-by/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              5,
+              39
+            ],
+            [
+              5,
+              55
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/types.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./context.ts",
+          "specifierRange": [
+            [
+              8,
+              29
+            ],
+            [
+              8,
+              43
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./hono.ts",
+          "specifierRange": [
+            [
+              9,
+              26
+            ],
+            [
+              9,
+              37
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./utils/http-status.ts",
+          "specifierRange": [
+            [
+              10,
+              32
+            ],
+            [
+              10,
+              56
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./utils/types.ts",
+          "specifierRange": [
+            [
+              18,
+              7
+            ],
+            [
+              18,
+              25
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/client/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./client.ts",
+          "specifierRange": [
+            [
+              5,
+              19
+            ],
+            [
+              5,
+              32
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./types.ts",
+          "specifierRange": [
+            [
+              13,
+              7
+            ],
+            [
+              13,
+              19
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/middleware/cors/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              5,
+              29
+            ],
+            [
+              5,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              6,
+              39
+            ],
+            [
+              6,
+              55
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/router.ts": {},
+    "/src/adapter/cloudflare-pages/handler.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              0,
+              24
+            ],
+            [
+              0,
+              42
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../hono.ts",
+          "specifierRange": [
+            [
+              1,
+              26
+            ],
+            [
+              1,
+              41
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../http-exception.ts",
+          "specifierRange": [
+            [
+              2,
+              30
+            ],
+            [
+              2,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              3,
+              72
+            ],
+            [
+              3,
+              88
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/dom/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../base.ts",
+          "specifierRange": [
+            [
+              5,
+              60
+            ],
+            [
+              5,
+              72
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../base.ts",
+          "specifierRange": [
+            [
+              6,
+              63
+            ],
+            [
+              6,
+              75
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../children.ts",
+          "specifierRange": [
+            [
+              7,
+              25
+            ],
+            [
+              7,
+              41
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../context.ts",
+          "specifierRange": [
+            [
+              8,
+              27
+            ],
+            [
+              8,
+              42
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../hooks/index.ts",
+          "specifierRange": [
+            [
+              30,
+              7
+            ],
+            [
+              30,
+              26
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./hooks/index.ts",
+          "specifierRange": [
+            [
+              31,
+              61
+            ],
+            [
+              31,
+              79
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./components.ts",
+          "specifierRange": [
+            [
+              32,
+              40
+            ],
+            [
+              32,
+              57
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./context.ts",
+          "specifierRange": [
+            [
+              33,
+              30
+            ],
+            [
+              33,
+              44
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./jsx-runtime.ts",
+          "specifierRange": [
+            [
+              34,
+              30
+            ],
+            [
+              34,
+              48
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./render.ts",
+          "specifierRange": [
+            [
+              35,
+              40
+            ],
+            [
+              35,
+              53
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./render.ts",
+          "specifierRange": [
+            [
+              37,
+              23
+            ],
+            [
+              37,
+              36
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "../context.ts",
+          "specifierRange": [
+            [
+              156,
+              29
+            ],
+            [
+              156,
+              44
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "../types.ts",
+          "specifierRange": [
+            [
+              158,
+              19
+            ],
+            [
+              158,
+              32
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/hono.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./hono-base.ts",
+          "specifierRange": [
+            [
+              0,
+              25
+            ],
+            [
+              0,
+              41
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./hono-base.ts",
+          "specifierRange": [
+            [
+              1,
+              33
+            ],
+            [
+              1,
+              49
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./router/reg-exp-router/index.ts",
+          "specifierRange": [
+            [
+              2,
+              29
+            ],
+            [
+              2,
+              63
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./router/smart-router/index.ts",
+          "specifierRange": [
+            [
+              3,
+              28
+            ],
+            [
+              3,
+              60
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./router/trie-router/index.ts",
+          "specifierRange": [
+            [
+              4,
+              27
+            ],
+            [
+              4,
+              58
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./types.ts",
+          "specifierRange": [
+            [
+              5,
+              56
+            ],
+            [
+              5,
+              68
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/service-worker/handler.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../hono.ts",
+          "specifierRange": [
+            [
+              5,
+              26
+            ],
+            [
+              5,
+              41
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./types.ts",
+          "specifierRange": [
+            [
+              6,
+              32
+            ],
+            [
+              6,
+              44
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/helper/dev/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../hono.ts",
+          "specifierRange": [
+            [
+              5,
+              26
+            ],
+            [
+              5,
+              41
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              6,
+              38
+            ],
+            [
+              6,
+              54
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/color.ts",
+          "specifierRange": [
+            [
+              7,
+              32
+            ],
+            [
+              7,
+              54
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/handler.ts",
+          "specifierRange": [
+            [
+              8,
+              48
+            ],
+            [
+              8,
+              72
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/cloudflare-workers/conninfo.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../helper/conninfo/index.ts",
+          "specifierRange": [
+            [
+              0,
+              33
+            ],
+            [
+              0,
+              65
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/middleware/pretty-json/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              5,
+              39
+            ],
+            [
+              5,
+              55
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/validator/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./validator.ts",
+          "specifierRange": [
+            [
+              5,
+              26
+            ],
+            [
+              5,
+              42
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./validator.ts",
+          "specifierRange": [
+            [
+              6,
+              40
+            ],
+            [
+              6,
+              56
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/html.ts": {},
+    "/src/jsx/jsx-dev-runtime.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../utils/html.ts",
+          "specifierRange": [
+            [
+              5,
+              39
+            ],
+            [
+              5,
+              57
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./base.ts",
+          "specifierRange": [
+            [
+              6,
+              22
+            ],
+            [
+              6,
+              33
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./base.ts",
+          "specifierRange": [
+            [
+              7,
+              29
+            ],
+            [
+              7,
+              40
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "export",
+          "specifier": "./base.ts",
+          "specifierRange": [
+            [
+              8,
+              25
+            ],
+            [
+              8,
+              36
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./base.ts",
+          "specifierRange": [
+            [
+              9,
+              25
+            ],
+            [
+              9,
+              36
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/middleware/secure-headers/secure-headers.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              5,
+              29
+            ],
+            [
+              5,
+              47
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              6,
+              39
+            ],
+            [
+              6,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/encode.ts",
+          "specifierRange": [
+            [
+              7,
+              29
+            ],
+            [
+              7,
+              52
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/utils/jwt/utf8.ts": {},
+    "/src/router/reg-exp-router/node.ts": {},
+    "/src/adapter/aws-lambda/handler.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "node:crypto",
+          "specifierRange": [
+            [
+              0,
+              19
+            ],
+            [
+              0,
+              32
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../hono.ts",
+          "specifierRange": [
+            [
+              1,
+              26
+            ],
+            [
+              1,
+              41
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              2,
+              33
+            ],
+            [
+              2,
+              49
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/encode.ts",
+          "specifierRange": [
+            [
+              3,
+              43
+            ],
+            [
+              3,
+              66
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./types.ts",
+          "specifierRange": [
+            [
+              10,
+              7
+            ],
+            [
+              10,
+              19
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/adapter/deno/conninfo.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../helper/conninfo/index.ts",
+          "specifierRange": [
+            [
+              0,
+              33
+            ],
+            [
+              0,
+              65
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/middleware/ip-restriction/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../index.ts",
+          "specifierRange": [
+            [
+              5,
+              48
+            ],
+            [
+              5,
+              64
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../helper/conninfo/index.ts",
+          "specifierRange": [
+            [
+              6,
+              46
+            ],
+            [
+              6,
+              78
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../http-exception.ts",
+          "specifierRange": [
+            [
+              7,
+              30
+            ],
+            [
+              7,
+              55
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/ipaddr.ts",
+          "specifierRange": [
+            [
+              13,
+              7
+            ],
+            [
+              13,
+              30
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/jsx/streaming.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../helper/html/index.ts",
+          "specifierRange": [
+            [
+              5,
+              20
+            ],
+            [
+              5,
+              45
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../utils/html.ts",
+          "specifierRange": [
+            [
+              6,
+              58
+            ],
+            [
+              6,
+              76
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../utils/html.ts",
+          "specifierRange": [
+            [
+              7,
+              39
+            ],
+            [
+              7,
+              57
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./components.ts",
+          "specifierRange": [
+            [
+              8,
+              33
+            ],
+            [
+              8,
+              50
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./constants.ts",
+          "specifierRange": [
+            [
+              9,
+              40
+            ],
+            [
+              9,
+              56
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./dom/components.ts",
+          "specifierRange": [
+            [
+              10,
+              48
+            ],
+            [
+              10,
+              69
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./dom/render.ts",
+          "specifierRange": [
+            [
+              11,
+              31
+            ],
+            [
+              11,
+              48
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./dom/render.ts",
+          "specifierRange": [
+            [
+              12,
+              48
+            ],
+            [
+              12,
+              65
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./index.ts",
+          "specifierRange": [
+            [
+              13,
+              50
+            ],
+            [
+              13,
+              62
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/helper/accepts/accepts.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../context.ts",
+          "specifierRange": [
+            [
+              0,
+              29
+            ],
+            [
+              0,
+              47
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/helper/factory/index.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../hono.ts",
+          "specifierRange": [
+            [
+              6,
+              21
+            ],
+            [
+              6,
+              36
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../types.ts",
+          "specifierRange": [
+            [
+              7,
+              71
+            ],
+            [
+              7,
+              87
+            ]
+          ]
+        }
+      ]
+    },
+    "/src/router/linear-router/router.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "../../router.ts",
+          "specifierRange": [
+            [
+              0,
+              44
+            ],
+            [
+              0,
+              61
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../router.ts",
+          "specifierRange": [
+            [
+              1,
+              54
+            ],
+            [
+              1,
+              71
+            ]
+          ]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../../utils/url.ts",
+          "specifierRange": [
+            [
+              2,
+              39
+            ],
+            [
+              2,
+              59
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./types": "./src/types.ts",
+    "./hono-base": "./src/hono-base.ts",
+    "./tiny": "./src/preset/tiny.ts",
+    "./quick": "./src/preset/quick.ts",
+    "./http-exception": "./src/http-exception.ts",
+    "./basic-auth": "./src/middleware/basic-auth/index.ts",
+    "./bearer-auth": "./src/middleware/bearer-auth/index.ts",
+    "./body-limit": "./src/middleware/body-limit/index.ts",
+    "./ip-restriction": "./src/middleware/ip-restriction/index.ts",
+    "./cache": "./src/middleware/cache/index.ts",
+    "./cookie": "./src/helper/cookie/index.ts",
+    "./accepts": "./src/helper/accepts/index.ts",
+    "./compress": "./src/middleware/compress/index.ts",
+    "./cors": "./src/middleware/cors/index.ts",
+    "./csrf": "./src/middleware/csrf/index.ts",
+    "./etag": "./src/middleware/etag/index.ts",
+    "./trailing-slash": "./src/middleware/trailing-slash/index.ts",
+    "./html": "./src/helper/html/index.ts",
+    "./css": "./src/helper/css/index.ts",
+    "./jsx": "./src/jsx/index.ts",
+    "./jsx/jsx-dev-runtime": "./src/jsx/jsx-dev-runtime.ts",
+    "./jsx/jsx-runtime": "./src/jsx/jsx-runtime.ts",
+    "./jsx/streaming": "./src/jsx/streaming.ts",
+    "./jsx-renderer": "./src/middleware/jsx-renderer/index.ts",
+    "./jsx/dom": "./src/jsx/dom/index.ts",
+    "./jsx/dom/jsx-dev-runtime": "./src/jsx/dom/jsx-dev-runtime.ts",
+    "./jsx/dom/jsx-runtime": "./src/jsx/dom/jsx-runtime.ts",
+    "./jsx/dom/client": "./src/jsx/dom/client.ts",
+    "./jsx/dom/css": "./src/jsx/dom/css.ts",
+    "./jsx/dom/server": "./src/jsx/dom/server.ts",
+    "./jwt": "./src/middleware/jwt/jwt.ts",
+    "./timing": "./src/middleware/timing/timing.ts",
+    "./logger": "./src/middleware/logger/index.ts",
+    "./method-override": "./src/middleware/method-override/index.ts",
+    "./powered-by": "./src/middleware/powered-by/index.ts",
+    "./pretty-json": "./src/middleware/pretty-json/index.ts",
+    "./request-id": "./src/middleware/request-id/request-id.ts",
+    "./secure-headers": "./src/middleware/secure-headers/secure-headers.ts",
+    "./combine": "./src/middleware/combine/index.ts",
+    "./ssg": "./src/helper/ssg/index.ts",
+    "./streaming": "./src/helper/streaming/index.ts",
+    "./validator": "./src/validator/index.ts",
+    "./router": "./src/router.ts",
+    "./router/reg-exp-router": "./src/router/reg-exp-router/index.ts",
+    "./router/smart-router": "./src/router/smart-router/index.ts",
+    "./router/trie-router": "./src/router/trie-router/index.ts",
+    "./router/pattern-router": "./src/router/pattern-router/index.ts",
+    "./router/linear-router": "./src/router/linear-router/index.ts",
+    "./client": "./src/client/index.ts",
+    "./adapter": "./src/helper/adapter/index.ts",
+    "./factory": "./src/helper/factory/index.ts",
+    "./serve-static": "./src/middleware/serve-static/index.ts",
+    "./cloudflare-workers": "./src/adapter/cloudflare-workers/index.ts",
+    "./cloudflare-pages": "./src/adapter/cloudflare-pages/index.ts",
+    "./deno": "./src/adapter/deno/index.ts",
+    "./bun": "./src/adapter/bun/index.ts",
+    "./aws-lambda": "./src/adapter/aws-lambda/index.ts",
+    "./vercel": "./src/adapter/vercel/index.ts",
+    "./netlify": "./src/adapter/netlify/index.ts",
+    "./lambda-edge": "./src/adapter/lambda-edge/index.ts",
+    "./service-worker": "./src/adapter/service-worker/index.ts",
+    "./testing": "./src/helper/testing/index.ts",
+    "./dev": "./src/helper/dev/index.ts",
+    "./ws": "./src/helper/websocket/index.ts",
+    "./utils/body": "./src/utils/body.ts",
+    "./utils/buffer": "./src/utils/buffer.ts",
+    "./utils/color": "./src/utils/color.ts",
+    "./utils/concurrent": "./src/utils/concurrent.ts",
+    "./utils/cookie": "./src/utils/cookie.ts",
+    "./utils/crypto": "./src/utils/crypto.ts",
+    "./utils/encode": "./src/utils/encode.ts",
+    "./utils/filepath": "./src/utils/filepath.ts",
+    "./utils/handler": "./src/utils/handler.ts",
+    "./utils/html": "./src/utils/html.ts",
+    "./utils/http-status": "./src/utils/http-status.ts",
+    "./utils/jwt": "./src/utils/jwt/index.ts",
+    "./utils/jwt/jwa": "./src/utils/jwt/jwa.ts",
+    "./utils/jwt/jws": "./src/utils/jwt/jws.ts",
+    "./utils/jwt/jwt": "./src/utils/jwt/jwt.ts",
+    "./utils/jwt/types": "./src/utils/jwt/types.ts",
+    "./utils/jwt/utf8": "./src/utils/jwt/utf8.ts",
+    "./utils/mime": "./src/utils/mime.ts",
+    "./utils/stream": "./src/utils/stream.ts",
+    "./utils/types": "./src/utils/types.ts",
+    "./utils/url": "./src/utils/url.ts",
+    "./utils/ipaddr": "./src/utils/ipaddr.ts"
+  }
+}
