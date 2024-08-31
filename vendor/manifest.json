@@ -1,0 +1,9 @@
+{
+  "modules": {
+    "https://esm.sh/shq@1.0.2": {
+      "headers": {
+        "content-type": "application/javascript; charset=utf-8"
+      }
+    }
+  }
+}
