@@ -126,7 +126,7 @@ app
   });
 
 app.post("/api/watch", async (c) => {
-  const paths: string[][] = (await c.req.json()) as string[][];
+  const raw_paths: string[][] = (await c.req.json()) as string[][];
   const token: string = c.req.header("Authorization");
   for (const path of paths) {
     const isValid = await validateToken(token, path.join("/"), false);
@@ -134,6 +134,7 @@ app.post("/api/watch", async (c) => {
       throw new HTTPException(401, { message: "Unauthorized" });
     }
   }
+  const paths = raw_paths.map((path) => [...prefix, ...path]);
   const noSSE = c.req.query("noSSE");
   if (noSSE) {
     return stream(c, async (stream) => {
