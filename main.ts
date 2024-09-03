@@ -134,23 +134,38 @@ app.post("/api/watch", async (c) => {
       throw new HTTPException(401, { message: "Unauthorized" });
     }
   }
-  const watch = kv.watch(paths);
-  let id = 0;
-
-  return streamSSE(async (stream) => {
-    for await (const events of watch) {
-      console.log({ events });
-      for (const event of events) {
-        if (event) {
-          stream.writeSSE({
-            data: JSON.stringify(event),
-            event: "update", // TODO embed channel name
-            id: String(id++),
-          });
+  const noSSE = c.req.query("noSSE");
+  if (noSSE) {
+    return stream(c, async (stream) => {
+      const watch = kv.watch(paths);
+      // stream.onAbort(() => {
+      //   console.log("Aborted!");
+      // });
+      for await (const events of watch) {
+        for (const event of events) {
+          if (event) {
+            stream.write(JSON.stringify(event) + "\n");
+          }
         }
       }
-    }
-  });
+    });
+  } else {
+    return streamSSE(c, async (stream) => {
+      const watch = kv.watch(paths);
+      let id = 0;
+      for await (const events of watch) {
+        for (const event of events) {
+          if (event) {
+            stream.writeSSE({
+              data: JSON.stringify(event),
+              event: "update", // TODO embed channel name
+              id: String(id++),
+            });
+          }
+        }
+      }
+    });
+  }
 });
 
 export default {
