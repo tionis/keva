@@ -128,7 +128,7 @@ app
 app.post("/api/watch", async (c) => {
   const raw_paths: string[][] = (await c.req.json()) as string[][];
   const token: string = c.req.header("Authorization");
-  for (const path of paths) {
+  for (const path of raw_paths) {
     const isValid = await validateToken(token, path.join("/"), false);
     if (!isValid) {
       throw new HTTPException(401, { message: "Unauthorized" });
@@ -145,6 +145,7 @@ app.post("/api/watch", async (c) => {
       for await (const events of watch) {
         for (const event of events) {
           if (event) {
+            event.key = event.key.slice(prefix.length);
             stream.write(JSON.stringify(event) + "\n");
           }
         }
@@ -157,6 +158,7 @@ app.post("/api/watch", async (c) => {
       for await (const events of watch) {
         for (const event of events) {
           if (event) {
+            event.key = event.key.slice(prefix.length);
             stream.writeSSE({
               data: JSON.stringify(event),
               event: "update", // TODO embed channel name
