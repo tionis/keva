@@ -1,3 +1,0 @@
-/* esm.sh - esbuild bundle(shq@1.0.2) denonext production */
-function a(t){return t.length===1?"'\\''":`'"${t}"'`}var i=/\x00+/g,f=/^[A-Za-z0-9,:=_\.\/\-]+$/,g=/'+/g;function o(t,e){if(!e)return t.empty||"''";let n=String(e).replace(i,""),c=f.exec(n);if(c&&c[0].length===n.length){let u=t.gratuitous||"";return u+n+u}return("'"+n.replace(g,a)+"'").replace(/^''/,"").replace(/''$/,"")}function r(t){return o(!1,t)}function s(t){return t?function(n){return o(t,n)}:r}Object.assign(r,{cfg:s,always:s({gratuitous:"'"})});var l=r;export{l as default};
-//# sourceMappingURL=shq.mjs.map
