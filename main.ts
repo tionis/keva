@@ -42,6 +42,48 @@ function pathToKey(path: string): string[] {
   return [...prefix, ...path.split("/")];
 }
 
+enum KevaObjectType {
+  STRING,
+  INTEGER,
+  SIMPLE_DATALOG,
+  SQLITE,
+  SET,
+  // SORTED_SET,
+  ARRAY, // Aka LIST?
+  OBJECT, // json object (the default)
+}
+
+function getKevaObjectType(val: unknown): KevaObjectType {
+  switch (typeof val) {
+    case "string":
+      return KevaObjectType.STRING;
+    case "number":
+      return KevaObjectType.INTEGER;
+    case "object":
+      if (Array.isArray(val)) {
+        return KevaObjectType.ARRAY;
+      } else {
+        // check type key in object
+        const objectType = (val as Record<string, unknown>).type;
+        switch (objectType) {
+          case "sdl":
+            return KevaObjectType.SIMPLE_DATALOG;
+          case "sqlite":
+            return KevaObjectType.SQLITE;
+          case "set":
+            return KevaObjectType.SET;
+          default:
+            return KevaObjectType.OBJECT;
+        }
+      }
+    default:
+      throw new Error("Unsupported type");
+  }
+}
+// TODO add support for streams and pubsub
+
+// TODO add lcoal cache for datalog and sqlite stores, they store the versionstamp of their state
+
 app
   .get("/rest/:path{.+$}", async (c) => {
     const token = c.req.header("Authorization");
@@ -65,7 +107,7 @@ app
       return c.json(result.value);
     }
   })
-  .post(async (c) => {
+  .put(async (c) => {
     const token = c.req.header("Authorization");
     const { path } = c.req.param();
     const isValid = await validateToken(token, path, true);
@@ -98,7 +140,7 @@ app
       return c.json({ status: "success" });
     }
   })
-  .put(async (c) => {
+  .patch(async (c) => {
     const token = c.req.header("Authorization");
     const { path } = c.req.param();
     const isValid = await validateToken(token, path, true);
@@ -123,6 +165,34 @@ app
         .commit();
       done = res.ok;
     }
+  })
+  .post(async (c) => {
+    const token = c.req.header("Authorization");
+    const { path } = c.req.param();
+    const isValid = await validateToken(token, path, true);
+    if (!isValid) {
+      throw new HTTPException(401, { message: "Unauthorized" });
+    }
+    // message is a json array with the first element specifying the operation
+    // and the rest of the elements specifying the arguments
+
+    const args = await c.req.json();
+    if (!Array.isArray(args)) {
+      throw new HTTPException(400, { message: "Invalid JSON" });
+    }
+    const rawVal = await kv.get(pathToKey(path));
+    const valType = getKevaObjectType(rawVal.value);
+    // TODO forward the request to the appropriate handler based on the type
+    //   - string/bitmap
+    //   - integer
+    //   - array
+    //   - set
+    //   - simple datalog
+    //     - add (add x new facts in a transaction)
+    //     - query (execute a datalog query)
+    //   - sqlite
+    //     - exec (execute a sqlite query in a in-memory db loaded with the data from object)
+    // handler saves resulting new dataset (with optimistic locking) and returns the result
   });
 
 app.post("/api/watch", async (c) => {
