@@ -4,12 +4,12 @@ import { stream, streamSSE, streamText } from "hono/streaming";
 import { HTTPException } from "hono/http-exception";
 import { JsonPatch } from "https://deno.land/x/json_patch@v0.1.1/mod.ts";
 import { JsonPointer } from "https://deno.land/x/json_patch@v0.1.1/mod.ts";
-import { JSONObject } from "jsr:@hono/hono@^4.6.1/utils/types";
+import { JSONObject, JSONValue } from "jsr:@hono/hono@^4.6.1/utils/types";
 import { JsonValueType } from "https://deno.land/x/json_patch@v0.1.1/src/utils.ts";
 
 // TODO add support for pubsub (use a mqtt server as backend, proxied via keva to enforce token limits)
 //      or use mqtt patterns in pubsub limit field in tokens directly
-// TODO add local cache for datalog and sqlite stores, they store the versionstamp of their state
+
 // TODO add redis like endpoint over HTTP post and also websocket using json encoded wire format
 // with redis style commands, support the following types:
 // - yjs ...
@@ -20,9 +20,10 @@ import { JsonValueType } from "https://deno.land/x/json_patch@v0.1.1/src/utils.t
 // - integer
 // - set
 // - sorted set
-// - sqlite
-// - simple datalog
+// - sqlite (with local cache based on versionstamp)
+// - simple datalog (with local cache based on versionstamp)
 // - stream (basically an append only array with a watch?)
+
 const app = new Hono();
 const prefix = ["keva"];
 const kv = await Deno.openKv(Deno.env.get("DENO_KV_ENDPOINT"));
@@ -45,7 +46,7 @@ async function cronDeadManTrigger() {
     const now = new Date();
     if (
       Math.abs(now.getTime() - entry.lastPing.getTime()) >
-      entry.notifyDelay * 1000
+        entry.notifyDelay * 1000
     ) {
       if (
         entry.lastNotification === undefined ||
@@ -240,8 +241,9 @@ app
     }
     const expectedVersionStampQuery = c.req.query("versionstamp");
     const key = pathToKey(path);
-    const expectedVersionStamp =
-      expectedVersionStampQuery === "null" ? null : expectedVersionStampQuery;
+    const expectedVersionStamp = expectedVersionStampQuery === "null"
+      ? null
+      : expectedVersionStampQuery;
     let body;
     try {
       body = await c.req.json();
@@ -348,6 +350,8 @@ app.post("/ntfy/:channel{.+$}", async (c) => {
 app.post("/api/watch", async (c) => {
   const raw_paths: string[][] = (await c.req.json()) as string[][];
   const token: string | undefined = c.req.header("Authorization");
+  let { format } = c.req.query(); //default format to full
+  format = format || "full";
   for (const path of raw_paths) {
     const isValid = await validateToken(
       token,
@@ -358,9 +362,20 @@ app.post("/api/watch", async (c) => {
       throw new HTTPException(401, { message: "Unauthorized" });
     }
   }
+  if (format !== "full" && format !== "diff") {
+    throw new HTTPException(400, { message: "Invalid format" });
+  }
   const paths = raw_paths.map((path) => [...prefix, ...path]);
   const noSSE = c.req.query("noSSE");
-  // TODO: add diff mode that sends JSON diffs instead of full objects
+  const stateCache: Map<Array<string>, unknown> = new Map();
+
+  if (format === "diff") {
+    for (const path of paths) {
+      const result = await kv.get(path);
+      stateCache.set(path, result.value);
+    }
+  }
+
   if (noSSE) {
     return stream(c, async (stream) => {
       const watch = kv.watch(paths);
@@ -370,8 +385,21 @@ app.post("/api/watch", async (c) => {
       for await (const events of watch) {
         for (const event of events) {
           if (event) {
-            event.key = event.key.slice(prefix.length);
-            stream.write(JSON.stringify(event) + "\n");
+            if (format === "full") {
+              event.key = event.key.slice(prefix.length);
+              stream.write(JSON.stringify(event) + "\n");
+            } else {
+              let oldState = stateCache.get(event.key as Array<string>);
+              stateCache.set(event.key as Array<string>, event.value);
+              oldState = oldState || {};
+              const diff = jPatch.diff(oldState as JsonValueType, event.value as JsonValueType);
+              stream.write(
+                JSON.stringify({
+                  key: event.key.slice(prefix.length),
+                  diff: diff,
+                }) + "\n",
+              );
+            }
           }
         }
       }
@@ -383,12 +411,27 @@ app.post("/api/watch", async (c) => {
       for await (const events of watch) {
         for (const event of events) {
           if (event) {
-            event.key = event.key.slice(prefix.length);
+            if (format === "full") {
+              event.key = event.key.slice(prefix.length);
             stream.writeSSE({
               data: JSON.stringify(event),
               //event: "update",
               id: String(id++),
             });
+            } else {
+              let oldState = stateCache.get(event.key as Array<string>);
+              stateCache.set(event.key as Array<string>, event.value);
+              oldState = oldState || {};
+              const diff = jPatch.diff(oldState as JsonValueType, event.value as JsonValueType);
+              stream.writeSSE({
+                data: JSON.stringify({
+                  key: event.key.slice(prefix.length),
+                  diff: diff,
+                }),
+                //event: "update",
+                id: String(id++),
+              });
+            }
           }
         }
       }
