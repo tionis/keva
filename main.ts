@@ -4,7 +4,25 @@ import { stream, streamSSE, streamText } from "hono/streaming";
 import { HTTPException } from "hono/http-exception";
 import { JsonPatch } from "https://deno.land/x/json_patch@v0.1.1/mod.ts";
 import { JsonPointer } from "https://deno.land/x/json_patch@v0.1.1/mod.ts";
+import { JSONObject } from "jsr:@hono/hono@^4.6.1/utils/types";
+import { JsonValueType } from "https://deno.land/x/json_patch@v0.1.1/src/utils.ts";
 
+// TODO add support for pubsub (use a mqtt server as backend, proxied via keva to enforce token limits)
+//      or use mqtt patterns in pubsub limit field in tokens directly
+// TODO add local cache for datalog and sqlite stores, they store the versionstamp of their state
+// TODO add redis like endpoint over HTTP post and also websocket using json encoded wire format
+// with redis style commands, support the following types:
+// - yjs ...
+// - automerge ...
+// - object (json object)
+// - array (json array)
+// - string
+// - integer
+// - set
+// - sorted set
+// - sqlite
+// - simple datalog
+// - stream (basically an append only array with a watch?)
 const app = new Hono();
 const prefix = ["keva"];
 const kv = await Deno.openKv(Deno.env.get("DENO_KV_ENDPOINT"));
@@ -13,33 +31,99 @@ const jPatch = new JsonPatch();
 // const decoder = new TextDecoder();
 // const encoder = new TextEncoder();
 
+interface deadManTrigger {
+  lastPing: Date;
+  lastNotification?: Date;
+  notifyDelay: number;
+  notifyCooldown?: number;
+}
+
+async function cronDeadManTrigger() {
+  const kv = await Deno.openKv();
+  for await (const kventry of kv.list({ prefix: ["deadManTriggers"] })) {
+    const entry = kventry.value as deadManTrigger;
+    const now = new Date();
+    if (
+      Math.abs(now.getTime() - entry.lastPing.getTime()) >
+      entry.notifyDelay * 1000
+    ) {
+      if (
+        entry.lastNotification === undefined ||
+        Math.abs(now.getTime() - entry.lastNotification.getTime()) >
+          (entry.notifyCooldown || entry.notifyDelay) * 1000
+      ) {
+        const name = kventry.key.slice(1).join("/");
+        await notify("basinoti", name, {
+          reason: "deadManTrigger",
+          lastPing: entry.lastPing,
+        });
+        entry.lastNotification = now;
+        await kv.set(kventry.key, entry);
+      }
+    }
+  }
+}
+
+Deno.cron("Check for dead man triggers", "*/15 * * * *", cronDeadManTrigger);
+
 interface TokenPermissions {
-  WriteRegex: RegExp;
-  ReadRegex: RegExp;
+  // TODO migrate into subkeys?
+  WriteRegex?: RegExp;
+  ReadRegex?: RegExp;
+  // PubSub patterns
+  PingRegex?: RegExp;
+  NtfyRegex?: RegExp;
+  Name?: string;
+  Description?: string;
+}
+
+enum TokenOperation {
+  READ,
+  WRITE,
+  PING,
+  NTFY,
 }
 
 async function validateToken(
-  token: string,
+  token: string | undefined,
   path: string,
-  isWrite: boolean,
+  operation: TokenOperation,
 ): Promise<boolean> {
-  if (!token) {
-    return false;
-  }
-  const tokenData = await kv.get(["tokens", token]);
+  const tokenData = await kv.get(["tokens", token || "public"]);
   if (!tokenData.value) {
     return false;
   }
   const permissions = tokenData.value as TokenPermissions;
-  if (isWrite) {
-    return permissions.WriteRegex.test(path);
-  } else {
-    return permissions.ReadRegex.test(path);
+  switch (operation) {
+    case TokenOperation.READ:
+      if (!permissions.ReadRegex) {
+        return false;
+      }
+      return permissions.ReadRegex.test(path);
+    case TokenOperation.WRITE:
+      if (!permissions.WriteRegex) {
+        return false;
+      }
+      return permissions.WriteRegex.test(path);
+    case TokenOperation.PING:
+      if (!permissions.PingRegex) {
+        return false;
+      }
+      return permissions.PingRegex.test(path);
+    case TokenOperation.NTFY:
+      if (!permissions.NtfyRegex) {
+        return false;
+      }
+      return permissions.NtfyRegex.test(path);
   }
 }
 
 function pathToKey(path: string): string[] {
   return [...prefix, ...path.split("/")];
+}
+
+function deadManPathToChannel(path: string): string[] {
+  return ["deadManTriggers", ...path.split("/")];
 }
 
 enum KevaObjectType {
@@ -80,28 +164,69 @@ function getKevaObjectType(val: unknown): KevaObjectType {
       throw new Error("Unsupported type");
   }
 }
-// TODO add support for streams and pubsub
 
-// TODO add lcoal cache for datalog and sqlite stores, they store the versionstamp of their state
+async function notify(
+  source: string | undefined,
+  channel: string,
+  content: object | string,
+) {
+  const token = Deno.env.get("GUPPI_TELEGRAM_TOKEN");
+  if (token === undefined || token === "") {
+    throw new Error("Telegram token not set");
+  }
+  const chatId = "248533143";
+  const channelPart = channel ? `: #${channel}` : ":";
+  let message = `${source || "unknown"}${channelPart}\n`;
+  switch (typeof content) {
+    case "string":
+      message += content;
+      break;
+    case "object":
+      message += "```json\n" + JSON.stringify(content, null, 2) + "\n```";
+      break;
+    default:
+      message += String(content);
+  }
+  const url = `https://api.telegram.org/bot${token}/sendMessage`;
+
+  const resp = await fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      chat_id: chatId,
+      parse_mode: "markdown",
+      text: message,
+    }),
+  });
+  if (resp.status !== 200) {
+    console.error(await resp.text());
+    throw new Error("Failed to send notification");
+  }
+}
 
 app
   .get("/rest/:path{.+$}", async (c) => {
     const token = c.req.header("Authorization");
     const { path } = c.req.param();
-    const isValid = await validateToken(token, path, false);
-    if (!isValid) {
+    if (!(await validateToken(token, path, TokenOperation.READ))) {
       throw new HTTPException(401, { message: "Unauthorized" });
     }
     const { pointer, raw_pointer } = c.req.query();
     const key = pathToKey(path);
     const result = await kv.get(key);
+    if (result.value === null) {
+      throw new HTTPException(404, { message: "Not found" });
+    }
+    const value = result.value as JsonValueType;
     c.header("VERSIONSTAMP", result.versionstamp);
     if (pointer) {
-      const pointedResult = jPointer.apply(result.value, pointer);
+      const pointedResult = jPointer.apply(value, pointer);
       if (raw_pointer) {
         return c.json(pointedResult);
       } else {
-        return c.json(pointedResult.target);
+        return c.json(pointedResult.target as JSONObject);
       }
     } else {
       return c.json(result.value);
@@ -110,8 +235,7 @@ app
   .put(async (c) => {
     const token = c.req.header("Authorization");
     const { path } = c.req.param();
-    const isValid = await validateToken(token, path, true);
-    if (!isValid) {
+    if (!(await validateToken(token, path, TokenOperation.WRITE))) {
       throw new HTTPException(401, { message: "Unauthorized" });
     }
     const expectedVersionStampQuery = c.req.query("versionstamp");
@@ -143,8 +267,7 @@ app
   .patch(async (c) => {
     const token = c.req.header("Authorization");
     const { path } = c.req.param();
-    const isValid = await validateToken(token, path, true);
-    if (!isValid) {
+    if (!(await validateToken(token, path, TokenOperation.WRITE))) {
       throw new HTTPException(401, { message: "Unauthorized" });
     }
     const key = pathToKey(path);
@@ -157,7 +280,10 @@ app
     let done = false;
     while (!done) {
       const result = await kv.get(key);
-      const patched = jPatch.patch(result.value, patch);
+      if (result.value === null) {
+        throw new HTTPException(404, { message: "Not found" });
+      }
+      const patched = jPatch.patch(result.value as JsonValueType, patch);
       const res = await kv
         .atomic()
         .check({ key, versionstamp: result.versionstamp })
@@ -165,47 +291,76 @@ app
         .commit();
       done = res.ok;
     }
-  })
-  .post(async (c) => {
-    const token = c.req.header("Authorization");
-    const { path } = c.req.param();
-    const isValid = await validateToken(token, path, true);
-    if (!isValid) {
-      throw new HTTPException(401, { message: "Unauthorized" });
-    }
-    // message is a json array with the first element specifying the operation
-    // and the rest of the elements specifying the arguments
-
-    const args = await c.req.json();
-    if (!Array.isArray(args)) {
-      throw new HTTPException(400, { message: "Invalid JSON" });
-    }
-    const rawVal = await kv.get(pathToKey(path));
-    const valType = getKevaObjectType(rawVal.value);
-    // TODO forward the request to the appropriate handler based on the type
-    //   - string/bitmap
-    //   - integer
-    //   - array
-    //   - set
-    //   - simple datalog
-    //     - add (add x new facts in a transaction)
-    //     - query (execute a datalog query)
-    //   - sqlite
-    //     - exec (execute a sqlite query in a in-memory db loaded with the data from object)
-    // handler saves resulting new dataset (with optimistic locking) and returns the result
   });
+
+app.get("/ping", (c) => {
+  c.status(200);
+  return c.body("pong");
+});
+
+app.get("/ping/:channel{.+$}", async (c) => {
+  const { channel } = c.req.param();
+  const token = c.req.header("Authorization") || "public";
+  if (!(await validateToken(token, channel, TokenOperation.PING))) {
+    throw new HTTPException(401, { message: "Unauthorized" });
+  }
+  const now = new Date();
+  let res = { ok: false };
+  while (!res.ok) {
+    const entry = await kv.get(deadManPathToChannel(channel));
+    if (entry.value === null) {
+      throw new HTTPException(404, { message: "Ping target does not exist" });
+    }
+    const update = entry.value as deadManTrigger;
+    update.lastPing = now;
+    res = await kv.atomic().check(entry).set(entry.key, update).commit();
+  }
+  c.status(200);
+  return c.body("OK");
+});
+
+app.post("/ntfy/:channel{.+$}", async (c) => {
+  const token = c.req.header("Authorization");
+  const { channel } = c.req.param();
+  if (!(await validateToken(token, channel, TokenOperation.NTFY))) {
+    throw new HTTPException(401, { message: "Unauthorized" });
+  }
+  const tokenRes = await kv.get(["tokens", token || "public"]);
+  let source: string;
+  if (tokenRes.value) {
+    source = (tokenRes.value as TokenPermissions).Name || "unknown";
+  } else {
+    source = "unknown";
+  }
+  const { format } = c.req.query();
+  switch (format) {
+    case "json":
+      await notify(source, channel, await c.req.json());
+      c.status(200);
+      return c.body("OK");
+    default:
+      await notify(source, channel, await c.req.text());
+      c.status(200);
+      return c.body("OK");
+  }
+});
 
 app.post("/api/watch", async (c) => {
   const raw_paths: string[][] = (await c.req.json()) as string[][];
-  const token: string = c.req.header("Authorization");
+  const token: string | undefined = c.req.header("Authorization");
   for (const path of raw_paths) {
-    const isValid = await validateToken(token, path.join("/"), false);
+    const isValid = await validateToken(
+      token,
+      path.join("/"),
+      TokenOperation.READ,
+    );
     if (!isValid) {
       throw new HTTPException(401, { message: "Unauthorized" });
     }
   }
   const paths = raw_paths.map((path) => [...prefix, ...path]);
   const noSSE = c.req.query("noSSE");
+  // TODO: add diff mode that sends JSON diffs instead of full objects
   if (noSSE) {
     return stream(c, async (stream) => {
       const watch = kv.watch(paths);
@@ -231,7 +386,7 @@ app.post("/api/watch", async (c) => {
             event.key = event.key.slice(prefix.length);
             stream.writeSSE({
               data: JSON.stringify(event),
-              event: "update", // TODO embed channel name
+              //event: "update",
               id: String(id++),
             });
           }

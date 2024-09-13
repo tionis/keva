@@ -2,13 +2,12 @@
   "version": "3",
   "packages": {
     "specifiers": {
-      "jsr:@hono/hono@4.5.9": "jsr:@hono/hono@4.5.9",
-      "jsr:@hono/hono@^4.5.9": "jsr:@hono/hono@4.5.9",
+      "jsr:@hono/hono@^4.6.1": "jsr:@hono/hono@4.6.1",
       "npm:create-hono": "npm:create-hono@0.12.0"
     },
     "jsr": {
-      "@hono/hono@4.5.9": {
-        "integrity": "47f561e67aedbd6d1e21e3a1ae26c1b80ffdb62a51c161d502e75bee17ca40af"
+      "@hono/hono@4.6.1": {
+        "integrity": "993704e3a2fa8e965c2fa46c57fc038bd277e781a982d3bf0fb278f6671b195f"
       }
     },
     "npm": {
@@ -17,6 +16,9 @@
         "dependencies": {}
       }
     }
+  },
+  "redirects": {
+    "https://deno.land/x/deno_cron/cron.ts": "https://deno.land/x/deno_cron@v1.0.0/cron.ts"
   },
   "remote": {
     "https://deno.land/std@0.138.0/fmt/colors.ts": "30455035d6d728394781c10755351742dd731e3db6771b1843f9b9e490104d37",
@@ -79,6 +81,7 @@
     "https://deno.land/std@0.140.0/testing/_format.ts": "0d8dc79eab15b67cdc532826213bbe05bccfd276ca473a50a3fc7bbfb7260642",
     "https://deno.land/std@0.140.0/testing/asserts.ts": "3eea146ece74b36d4add6243c19c302e47b2b0201fbeceeeb243b06b6b410af7",
     "https://deno.land/x/cliffy@v0.24.2/ansi/colors.ts": "084fc3fe9309d8286f9961d6bd87de19437c3ece07ac55841039fa2994f5adce",
+    "https://deno.land/x/deno_cron@v1.0.0/cron.ts": "7f984d0c4c7ac4fb1ad3cd241d457e7808a9362735d910abb02dc689883ee3ef",
     "https://deno.land/x/dzx@0.4.0/mod.ts": "0567fdd7212a8f6ecde2cd4095228205eb23b2339b0444c6aba62e6afa3485c4",
     "https://deno.land/x/dzx@0.4.0/src/runtime/cd.ts": "523e9ff785e8d2861ab386fe9b6224b08cdfa4e0eea7b774ad76fbe046e19c94",
     "https://deno.land/x/dzx@0.4.0/src/runtime/deps.ts": "ef9e550ca07e110517184cb5f427a184fe7cc66ddea57135267689d2e3aca847",
@@ -106,7 +109,7 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@hono/hono@^4.5.9"
+      "jsr:@hono/hono@^4.6.1"
     ]
   }
 }
