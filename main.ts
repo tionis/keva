@@ -168,7 +168,7 @@ function getKevaObjectType(val: unknown): KevaObjectType {
 
 async function notify(
   source: string | undefined,
-  channel: string,
+  channel: string | undefined,
   content: object | string,
 ) {
   const token = Deno.env.get("GUPPI_TELEGRAM_TOKEN");
@@ -176,8 +176,7 @@ async function notify(
     throw new Error("Telegram token not set");
   }
   const chatId = "248533143";
-  const channelPart = channel ? `: #${channel}` : ":";
-  let message = `${source || "unknown"}${channelPart}\n`;
+  let message = `${source || "unknown"}@${channel || "unknown"}:\n`;
   switch (typeof content) {
     case "string":
       message += content;
@@ -282,18 +281,14 @@ app
     }
     const ttl = c.req.query("ttl");
     const opts = ttl ? { expireIn: parseInt(ttl) * 1000 } : undefined;
-    let res = {ok: false};
+    let res = { ok: false };
     while (!res.ok) {
       const result = await kv.get(key);
       if (result.value === null) {
         throw new HTTPException(404, { message: "Not found" });
       }
       const patched = jPatch.patch(result.value as JsonValueType, patch);
-      res = await kv
-        .atomic()
-        .check(result)
-        .set(key, patched, opts)
-        .commit();
+      res = await kv.atomic().check(result).set(key, patched, opts).commit();
     }
   });
 
