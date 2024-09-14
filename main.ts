@@ -244,6 +244,8 @@ app
     const expectedVersionStamp =
       expectedVersionStampQuery === "null" ? null : expectedVersionStampQuery;
     let body;
+    const ttl = c.req.query("ttl");
+    const opts = ttl ? { expireIn: parseInt(ttl) * 1000 } : undefined;
     try {
       body = await c.req.json();
     } catch (e) {
@@ -253,7 +255,7 @@ app
       const res = await kv
         .atomic()
         .check({ key, versionstamp: expectedVersionStamp })
-        .set(key, body)
+        .set(key, body, opts)
         .commit();
       if (!res) {
         throw new Error("Conflict");
@@ -261,7 +263,7 @@ app
         return c.json({ status: "success" });
       }
     } else {
-      await kv.set(key, body);
+      await kv.set(key, body, opts);
       return c.json({ status: "success" });
     }
   })
@@ -278,19 +280,20 @@ app
     } catch (e) {
       throw new HTTPException(400, { message: `Invalid JSON: ${e}` });
     }
-    let done = false;
-    while (!done) {
+    const ttl = c.req.query("ttl");
+    const opts = ttl ? { expireIn: parseInt(ttl) * 1000 } : undefined;
+    let res = {ok: false};
+    while (!res.ok) {
       const result = await kv.get(key);
       if (result.value === null) {
         throw new HTTPException(404, { message: "Not found" });
       }
       const patched = jPatch.patch(result.value as JsonValueType, patch);
-      const res = await kv
+      res = await kv
         .atomic()
-        .check({ key, versionstamp: result.versionstamp })
-        .set(key, patched)
+        .check(result)
+        .set(key, patched, opts)
         .commit();
-      done = res.ok;
     }
   });
 
