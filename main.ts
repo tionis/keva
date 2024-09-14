@@ -54,7 +54,7 @@ async function cronDeadManTrigger() {
           (entry.notifyCooldown || entry.notifyDelay) * 1000
       ) {
         const name = kventry.key.slice(1).join("/");
-        await notify("basinoti", name, {
+        await notify("keva", name, {
           reason: "deadManTrigger",
           lastPing: entry.lastPing,
         });
