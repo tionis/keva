@@ -170,6 +170,7 @@ async function notify(
   source: string | undefined,
   channel: string | undefined,
   content: object | string,
+  silent: boolean | undefined = false,
 ) {
   const token = Deno.env.get("GUPPI_TELEGRAM_TOKEN");
   if (token === undefined || token === "") {
@@ -198,6 +199,7 @@ async function notify(
       chat_id: chatId,
       parse_mode: "markdown",
       text: message,
+      silent: silent,
     }),
   });
   if (resp.status !== 200) {
@@ -331,14 +333,15 @@ app.post("/ntfy/:channel{.+$}", async (c) => {
   } else {
     source = "unknown";
   }
+  const silent = c.req.query("silent") === "true";
   const { format } = c.req.query();
   switch (format) {
     case "json":
-      await notify(source, channel, await c.req.json());
+      await notify(source, channel, await c.req.json(), silent);
       c.status(200);
       return c.body("OK");
     default:
-      await notify(source, channel, await c.req.text());
+      await notify(source, channel, await c.req.text(), silent);
       c.status(200);
       return c.body("OK");
   }
