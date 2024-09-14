@@ -1,14 +1,13 @@
 #!/bin/env -S deno run --allow-env=DENO_KV_ENDPOINT,DENO_KV_ACCESS_TOKEN --unstable-kv --allow-net=0.0.0.0:8000,dkv.fly.dev
 import { Hono } from "hono";
-import { stream, streamSSE, streamText } from "hono/streaming";
+import { stream, streamSSE } from "hono/streaming";
 import { HTTPException } from "hono/http-exception";
 import { JsonPatch } from "https://deno.land/x/json_patch@v0.1.1/mod.ts";
 import { JsonPointer } from "https://deno.land/x/json_patch@v0.1.1/mod.ts";
-import { JSONObject, JSONValue } from "jsr:@hono/hono@^4.6.1/utils/types";
+import { JSONObject } from "jsr:@hono/hono@^4.6.1/utils/types";
 import { JsonValueType } from "https://deno.land/x/json_patch@v0.1.1/src/utils.ts";
 
-// TODO add support for pubsub (use a mqtt server as backend, proxied via keva to enforce token limits)
-//      or use mqtt patterns in pubsub limit field in tokens directly
+// TODO add support for pubsub (use a mqtt server or patchwork + some hacking as backend)
 
 // TODO add redis like endpoint over HTTP post and also websocket using json encoded wire format
 // with redis style commands, support the following types:
@@ -40,13 +39,14 @@ interface deadManTrigger {
 }
 
 async function cronDeadManTrigger() {
-  const kv = await Deno.openKv();
+  // TODO use locks/leases etc to ensure only one instance of this cron runs at a time
+  console.log([new Date(), "Checking deadManTriggers"]);
   for await (const kventry of kv.list({ prefix: ["deadManTriggers"] })) {
     const entry = kventry.value as deadManTrigger;
     const now = new Date();
     if (
       Math.abs(now.getTime() - entry.lastPing.getTime()) >
-        entry.notifyDelay * 1000
+      entry.notifyDelay * 1000
     ) {
       if (
         entry.lastNotification === undefined ||
@@ -63,12 +63,12 @@ async function cronDeadManTrigger() {
       }
     }
   }
+  console.log([new Date(), "Done checking deadManTriggers"]);
 }
 
 Deno.cron("Check for dead man triggers", "*/15 * * * *", cronDeadManTrigger);
 
 interface TokenPermissions {
-  // TODO migrate into subkeys?
   WriteRegex?: RegExp;
   ReadRegex?: RegExp;
   // PubSub patterns
@@ -241,9 +241,8 @@ app
     }
     const expectedVersionStampQuery = c.req.query("versionstamp");
     const key = pathToKey(path);
-    const expectedVersionStamp = expectedVersionStampQuery === "null"
-      ? null
-      : expectedVersionStampQuery;
+    const expectedVersionStamp =
+      expectedVersionStampQuery === "null" ? null : expectedVersionStampQuery;
     let body;
     try {
       body = await c.req.json();
@@ -392,7 +391,10 @@ app.post("/api/watch", async (c) => {
               let oldState = stateCache.get(event.key as Array<string>);
               stateCache.set(event.key as Array<string>, event.value);
               oldState = oldState || {};
-              const diff = jPatch.diff(oldState as JsonValueType, event.value as JsonValueType);
+              const diff = jPatch.diff(
+                oldState as JsonValueType,
+                event.value as JsonValueType,
+              );
               stream.write(
                 JSON.stringify({
                   key: event.key.slice(prefix.length),
@@ -413,16 +415,19 @@ app.post("/api/watch", async (c) => {
           if (event) {
             if (format === "full") {
               event.key = event.key.slice(prefix.length);
-            stream.writeSSE({
-              data: JSON.stringify(event),
-              //event: "update",
-              id: String(id++),
-            });
+              stream.writeSSE({
+                data: JSON.stringify(event),
+                //event: "update",
+                id: String(id++),
+              });
             } else {
               let oldState = stateCache.get(event.key as Array<string>);
               stateCache.set(event.key as Array<string>, event.value);
               oldState = oldState || {};
-              const diff = jPatch.diff(oldState as JsonValueType, event.value as JsonValueType);
+              const diff = jPatch.diff(
+                oldState as JsonValueType,
+                event.value as JsonValueType,
+              );
               stream.writeSSE({
                 data: JSON.stringify({
                   key: event.key.slice(prefix.length),
