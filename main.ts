@@ -199,7 +199,7 @@ async function notify(
       chat_id: chatId,
       parse_mode: "markdown",
       text: message,
-      silent: silent,
+      disable_notification: silent,
     }),
   });
   if (resp.status !== 200) {
