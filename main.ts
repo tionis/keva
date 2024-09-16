@@ -340,6 +340,17 @@ app.post("/ntfy/:channel{.+$}", async (c) => {
       await notify(source, channel, await c.req.json(), silent);
       c.status(200);
       return c.body("OK");
+    case "apprise_json": {
+      const req_json = await c.req.json();
+      const message = `# ${req_json.title || "no title"} (${
+        req_json.type || "no type"
+      })\n${req_json.message}`;
+      await notify(source, channel, message, silent);
+      c.status(200);
+      return c.body("OK");
+    }
+    case "md":
+    case "markdown":
     default:
       await notify(source, channel, await c.req.text(), silent);
       c.status(200);
