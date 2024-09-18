@@ -31,6 +31,28 @@ const jPatch = new JsonPatch();
 // const decoder = new TextDecoder();
 // const encoder = new TextEncoder();
 
+enum message_qos {
+  AT_MOST_ONCE = 0,
+  AT_LEAST_ONCE = 1,
+  EXACTLY_ONCE = 2,
+}
+
+const messageDefaults = {
+  qos: message_qos.AT_MOST_ONCE,
+  ttl: 31 * 24 * 60 * 60,
+};
+
+interface Message {
+  value: unknown; // The payload of the message (JSON serializable object or value)
+  ttl?: number; // Number of seconds the message should be valid for until delivery conditions are met
+  qos?: message_qos; // Quality of service level
+  responseChannel?: string; // Channel to send a response to
+  sender?: string; // Sender of the message
+  sendingTime?: Date; // Time the message was sent
+  brokerReceivedTime?: Date; // Time the message was received by the broker
+  duplicate?: boolean; // Whether the message is a duplicate (for QoS levels 1 and 2)
+}
+
 interface deadManTrigger {
   lastPing: Date;
   lastNotification?: Date;
@@ -454,6 +476,30 @@ app.post("/api/watch", async (c) => {
       }
     });
   }
+});
+
+// Some functions for my personal use
+// Send me the weather each morning
+Deno.cron("Weather", "0 8 * * *", async () => {
+  const location = kv.get([...prefix, "tionis", "location"]) || "Passau";
+  const weather = await (
+    await fetch(`https://wttr.in/${location}?format=j1`)
+  ).json();
+  await notify(
+    // TODO improve message
+    "keva",
+    "weather",
+    {
+      Feels_Like: weather.current_condition.FeelsLikeC,
+      Pressure: weather.current_condition.pressure,
+      Humidity: weather.current_condition.humidity,
+      Tempeature: weather.current_condition.temp_C,
+      UV: weather.current_condition.uv_index,
+      Visibility: weather.current_condition.visibility,
+      Description: weather.current_condition.weatherDesc[0].value,
+    },
+    true,
+  );
 });
 
 export default {
