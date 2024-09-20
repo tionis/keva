@@ -78,6 +78,7 @@ async function cronDeadManTrigger() {
         const name = kventry.key.slice(1).join("/");
         await notify("keva", name, {
           reason: "deadManTrigger",
+          name: name,
           lastPing: entry.lastPing,
         });
         entry.lastNotification = now;
