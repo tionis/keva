@@ -1,4 +1,7 @@
 # KeVa
+> This project was archived after realizing that all my needs could be modeled with other tools (e.g. postgres + rest, patchwork etc).
+> I was especially not happy with some limitations in the backend design that occurred due to using deno kv.
+
 Keva is a simple data backend for small scripts and snippets around my personal infrastructure.  
 It exposes the following features
 - a regex based token system with different namespaces for different features
